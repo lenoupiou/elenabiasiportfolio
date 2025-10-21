@@ -178,30 +178,6 @@ document.addEventListener("DOMContentLoaded", function () {
     imageGrid.style.display = "none"; // Masquer la grille d'images
   });
 
-  // Remove any existing additional video first
-  const existingAdditional = document.getElementById("additionalVideo");
-  if (existingAdditional) {
-    existingAdditional.remove();
-  }
-
-  // Check if the JSON object has videoAdditional
-  if (data[i].videoAdditional) {
-    const additionalVideo = document.createElement("video");
-    additionalVideo.id = "additionalVideo";
-    additionalVideo.controls = true;
-    additionalVideo.loop = true;
-    additionalVideo.muted = false;
-    additionalVideo.autoplay = false;
-    additionalVideo.playsInline = true;
-    additionalVideo.style.width = "100%";
-    additionalVideo.style.marginTop = "20px";
-
-    additionalVideo.src = `imgTitre/${data[i].videoAdditional}`;
-
-    // Append after pageContent
-    pageContent.appendChild(additionalVideo);
-  }
-
   // Create the fullscreen image overlay
   const fullscreenOverlay = document.createElement("div");
   fullscreenOverlay.id = "fullscreenOverlay";
