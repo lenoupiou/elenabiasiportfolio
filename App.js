@@ -141,6 +141,33 @@ document.addEventListener("DOMContentLoaded", function () {
           // Pause the clicked video to prevent overlap with page video
           // video.pause();
 
+          // ✅ Add Vimeo player only for "Magnetic Fragment"
+          if (data[i].title === "Magnetic Fragments") {
+            // Remove old Vimeo iframe if any
+            const oldVimeo = document.getElementById("vimeoPlayer");
+            if (oldVimeo) oldVimeo.remove();
+
+            // Create a Vimeo iframe player
+            const vimeoIframe = document.createElement("iframe");
+            vimeoIframe.id = "vimeoPlayer";
+            vimeoIframe.src =
+              "https://player.vimeo.com/video/1118741569?h=a02ba7cca7"; // 🔁 replace with your actual Vimeo embed link
+            vimeoIframe.width = "100%";
+            vimeoIframe.height = "480";
+            vimeoIframe.frameBorder = "0";
+            vimeoIframe.allow =
+              "autoplay; fullscreen; picture-in-picture; clipboard-write";
+            vimeoIframe.allowFullscreen = true;
+
+            // Insert the Vimeo player just below the main project video
+            // ➕ Insert the Vimeo player after pageContent (so it's below everything)
+            pageContent.insertAdjacentElement("afterend", vimeoIframe);
+          } else {
+            // Remove Vimeo player if switching to another project
+            const oldVimeo = document.getElementById("vimeoPlayer");
+            if (oldVimeo) oldVimeo.remove();
+          }
+
           imageGrid.innerHTML = "";
 
           if (data[i].images && data[i].images.length > 0) {
