@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
   page.appendChild(imageGrid);
 
   // Load JSON data
-  fetch("titles.json")
+  fetch("titles.JSON")
     .then((response) => response.json())
     .then((data) => {
       const maxItems = 14; // Set the number of items
