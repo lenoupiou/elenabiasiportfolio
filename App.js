@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   projectVideo.id = "projectVideo";
   projectVideo.controls = false;
   projectVideo.loop = true; // Ensure it will loop
-  projectVideo.muted = false; // Unmute the video
+  projectVideo.muted = true; // Unmute the video
   projectVideo.playsInline = true; // Ensure it plays inline on mobile
   pageContent.appendChild(projectVideo);
 
