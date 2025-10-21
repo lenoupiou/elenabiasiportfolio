@@ -1,6 +1,36 @@
 document.addEventListener("DOMContentLoaded", function () {
   const grid = document.getElementById("grid");
 
+  // Create filter buttons container
+  const filterContainer = document.createElement("div");
+  filterContainer.id = "filterContainer";
+  document.body.insertBefore(filterContainer, grid); // place above grid
+
+  // Define your filters
+  const filters = ["3D", "VR", "Web Design", "Graphic Design", "Illustration"];
+  const activeFilters = new Set(); // store active ones
+
+  filters.forEach((filterName) => {
+    const btn = document.createElement("button");
+    btn.classList.add("filterButton");
+    btn.textContent = filterName;
+
+    btn.addEventListener("click", () => {
+      if (activeFilters.has(filterName)) {
+        // deactivate
+        activeFilters.delete(filterName);
+        btn.classList.remove("active");
+      } else {
+        // activate
+        activeFilters.add(filterName);
+        btn.classList.add("active");
+      }
+      applyFilters(); // update grid display
+    });
+
+    filterContainer.appendChild(btn);
+  });
+
   // Create the "page" div dynamically
   const page = document.createElement("div");
   page.id = "page";
@@ -92,14 +122,34 @@ document.addEventListener("DOMContentLoaded", function () {
   imageGrid.id = "imageGrid";
   page.appendChild(imageGrid);
 
+  function applyFilters() {
+    const items = document.querySelectorAll(".grid-item");
+
+    items.forEach((item) => {
+      const keywords = item.dataset.keywords
+        ? item.dataset.keywords.split(",")
+        : [];
+
+      if (
+        activeFilters.size === 0 ||
+        [...activeFilters].some((f) => keywords.includes(f))
+      ) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
+
   // Load JSON data
   fetch("titles.JSON")
     .then((response) => response.json())
     .then((data) => {
-      const maxItems = 14; // Set the number of items
-      for (let i = 0; i < maxItems; i++) {
+      for (let i = 0; i < data.length; i++) {
         const div = document.createElement("div");
         div.classList.add("grid-item");
+
+        div.dataset.keywords = data[i].keywords.join(",");
 
         // Create video element for the grid
         const video = document.createElement("video");
@@ -151,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const vimeoIframe = document.createElement("iframe");
             vimeoIframe.id = "vimeoPlayer";
             vimeoIframe.src =
-              "https://player.vimeo.com/video/1118741569?h=a02ba7cca7"; // 🔁 replace with your actual Vimeo embed link
+              "https://player.vimeo.com/video/1118741569?h=a02ba7cca7";
             vimeoIframe.width = "100%";
             vimeoIframe.height = "480";
             vimeoIframe.frameBorder = "0";
