@@ -38,7 +38,18 @@
       "images/murakami4.png"
     ]
   },
-
+{
+    "title": "Magnetic Fragments",
+    "video": "magnetic-fragments.mp4",
+    "description": "Une animation motion design réalisée avec After Effect dans le cadre de la semaine After Effect de deuxième année à l'ECAL.",
+    "keywords": ["Webdesign", "WebDevelopment", "3D", "Three.js", "Javascript", "HTML", "CSS"],
+    "images": [
+      "images/magnetic1.png",
+      "images/magnetic2.png",
+      "images/magnetic3.png",
+      "images/magnetic4.png"
+    ]
+  },
   {
     "title": "Fragments Incubés",
     "video": "fragments-incubes.mp4",
