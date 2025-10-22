@@ -41,7 +41,7 @@
 {
     "title": "Magnetic Fragments",
     "video": "magnetic-fragments.mp4",
-    "description": "Avant l’essor du numérique et des réseaux sociaux, les moments du quotidien étaient capturés sur supports analogiques, puis visionnés en famille de manière linéaire. Ces longues cassettes VHS, faites de séquences successives, ont peu à peu disparu, victimes de leur obsolescence. Magnetic Fragments propose de redécouvrir ces souvenirs oubliés via une interface web tridimensionnelle où chaque bulle incarne un souvenir à explorer et commenter. Destinée à un cercle privé, la plateforme collaborative offre une navigation libre, revisitant les fragments de souvenirs de façon dynamique et rompant avec la structure monotone des anciens visionnages. Magnetic Fragments devient ainsi un lieu de transmission intergénérationnelle où le passé se partage dans le présent.",
+    "description": "Projet de diplome de bachelor à l'ECAL. Avant l’essor du numérique et des réseaux sociaux, les moments du quotidien étaient capturés sur supports analogiques, puis visionnés en famille de manière linéaire. Ces longues cassettes VHS, faites de séquences successives, ont peu à peu disparu, victimes de leur obsolescence. Magnetic Fragments propose de redécouvrir ces souvenirs oubliés via une interface web tridimensionnelle où chaque bulle incarne un souvenir à explorer et commenter. Destinée à un cercle privé, la plateforme collaborative offre une navigation libre, revisitant les fragments de souvenirs de façon dynamique et rompant avec la structure monotone des anciens visionnages. Magnetic Fragments devient ainsi un lieu de transmission intergénérationnelle où le passé se partage dans le présent.",
     "keywords": ["Web Design", "Graphic Design","Web Development", "Three.js", "Javascript", "HTML", "CSS","3D Graphics", "UX/UI", "Creative coding", "Data visualization"],
     "images": [
       "images/magnetic1.png",
@@ -53,7 +53,7 @@
   {
     "title": "Fragments Incubés",
     "video": "fragments-incubes.mp4",
-    "description": "Projet en réalité augmentée sur le thème de l'amnésie infantile et de l'utilisation de mes vidéos d'enfance.",
+    "description": "Projet en réalité augmentée sur le thème de l'amnésie infantile et de l'utilisation de mes vidéos d'enfance. Le principe de l'expérience est d'explorer à la première personne mes souvenirs d'enfance, de la gestation dans le ventre de ma mère, à l'accouchement et finalement à la petite enfance. Les bandes audio sont toutes extraites à partir de mes archives VHS familiales.",
     "keywords": ["3D", "Animation", "Blender", "VR", "Gaussian Splatting"],
     "images": [
       "images/incube1.png",
@@ -130,7 +130,7 @@
   {
     "title": "Mom wants me to be a doctor",
     "video": "mom.mp4",
-    "description": "Mom wants me to be a doctor est un jeu vidéo réalisé dans le cadre du cours Unreal Engine de deuxième année à l'ECAL.",
+    "description": "Un jeu vidéo réalisé dans le cadre du cours Unreal Engine en 2ème année à l'ECAL. Le concept du jeu est de représenter la pression familiale à travers une expérience narrative. Le personnage explore un univers où elle doit choisir sa destinée. Finalement elle décide de suivre son propre chemin et sa bulle éclate.",
     "keywords": ["Unreal Engine", "Game Design", "Game Development", "3D", "Blender", "Illustration"],
     "images": [
       "images/unreal1.png",
@@ -173,10 +173,10 @@
     "description": "Projet de clip vidéo réalisé dans le cadre du cours de Sami Benhadj en 2ème année à l'ECAL. Ce clip vidéo a été créé avec Aryana Noorani en collaboration avec l'artiste Suisse RougeHotel.",
     "keywords": ["3D", "Animation", "Blender", "Music Video", "Clip", "Music"],
     "images": [
-      "images/hello1.png",
+      "images/hello4.png",
       "images/hello2.png",
       "images/hello3.png",
-      "images/hello4.png"
+      "images/hello1.png"
     ]
   },
   {
@@ -196,13 +196,8 @@
     "title": "It rains cats and dogs",
     "video": "it-rains-cats-and-dogs.mp4",
     "description": "Une animation motion design réalisée avec After Effect dans le cadre de la semaine After Effect de deuxième année à l'ECAL.",
-    "keywords": ["Motion Design", "Animation", "After Effect", "Illustration", "2D"],
-    "images": [
-      "images/cat1.png",
-      "images/cat2.png",
-      "images/cat3.png",
-      "images/cat4.png"
-    ]
+    "keywords": ["Motion Design", "Animation", "After Effect", "Illustration", "2D"]
+   
   },
   {
     "title": "CHLORYS GENEVE",

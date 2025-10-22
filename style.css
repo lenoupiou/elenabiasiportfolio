@@ -47,8 +47,8 @@ body {
   position: fixed;
   font-family: Karla;
   padding: 20px;
-  font-size: 5vw;
-  line-height: 5vw;
+  font-size: 4vw;
+  line-height: 4vw;
   color: blue;
   transition: filter 0.2s ease, opacity 0.2s ease;
   pointer-events: none;
