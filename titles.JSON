@@ -70,10 +70,10 @@
     "description": "Un site web mobile immersif pour sensibiliser et inspirer l’action autour des Objectifs de Développement Durable (ODD). Let’s Act Now propose une série de sites web mobiles, chacun conçu comme un one-page interactif, dédié à un Objectif de Développement Durable (ODD). À travers des visuels et des vidéos percutants et des animations 3D, chaque page explore les enjeux globaux qui façonnent notre futur. Les visiteurs sont plongés dans une expérience où chaque élément visuel – des photos intrigantes aux séquences animées – est conçu pour éveiller la curiosité, provoquer des réflexions et inciter à l’engagement. Ce projet vise à rendre les ODD accessibles, impactants et engageants pour mobiliser un public large autour des défis mondiaux. Avec Let’s Act Now, l’objectif est clair : transformer la prise de conscience en action concrète.Projet en collaboration avec Quentin Kohler , Gabrielle Coué & Kristina Yenza.",
     "keywords": ["Graphic Design", "Photography", "Social Media" , "Design", "Web Design", "Campaign"],
     "images": [
-      "images/serviceDesign1.jpg",
-      "images/serviceDesign2.jpg",
-      "images/serviceDesign3.jpg",
-      "images/serviceDesign4.jpg"
+      "images/servicedesign1.jpg",
+      "images/servicedesign2.jpg",
+      "images/servicedesign3.jpg",
+      "images/servicedesign4.jpg"
     ]
   },
   {
@@ -105,7 +105,7 @@
   {
     "title": "Cozy Fort",
     "video": "cozy-fort.mp4",
-    "description": "Projet de réalité augmentée réalisé en collaboration avec Aryana Noorani. Le concept du projet était de permettre à l'utilisateur de se réfugier dans une cabane nostalgique et cozy.",
+    "description": "Projet de réalité augmentée (AR) réalisé en collaboration avec Aryana Noorani. Le concept du projet était de permettre à l'utilisateur de se réfugier dans une cabane nostalgique et cozy.",
     "keywords": ["AR", "VR", "Unity", "3D", "Cinema4D", "Blender", "CSharp"],
     "images": [
       "images/cozy1.png",
@@ -117,7 +117,7 @@
   {
     "title": "Who are you really?",
     "video": "who-are-you-really.mp4",
-    "description": "Who are you really? est un projet réalisé dans le cadre de la semaine beyond the screen en première année de l'ECAL. Le principe était de réaliser un objet qui puisse communiquer avec l'utilisateur avec un objet tangible.",
+    "description": "Un projet réalisé dans le cadre de la semaine beyond the screen en première année de l'ECAL en collaboration avec Emilie Maier. Le principe était de réaliser un objet qui puisse communiquer avec l'utilisateur avec un objet tangible.",
     "keywords": ["Interaction", "Graphic Design", "Objet", "Arduino", "Prototyping", "Tangible"],
     "images": [
       "images/talk1.png",
