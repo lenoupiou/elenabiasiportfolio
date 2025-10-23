@@ -42,7 +42,7 @@
     "title": "Magnetic Fragments",
     "video": "magnetic-fragments.mp4",
     "description": "Projet de diplome de bachelor à l'ECAL. Avant l’essor du numérique et des réseaux sociaux, les moments du quotidien étaient capturés sur supports analogiques, puis visionnés en famille de manière linéaire. Ces longues cassettes VHS, faites de séquences successives, ont peu à peu disparu, victimes de leur obsolescence. Magnetic Fragments propose de redécouvrir ces souvenirs oubliés via une interface web tridimensionnelle où chaque bulle incarne un souvenir à explorer et commenter. Destinée à un cercle privé, la plateforme collaborative offre une navigation libre, revisitant les fragments de souvenirs de façon dynamique et rompant avec la structure monotone des anciens visionnages. Magnetic Fragments devient ainsi un lieu de transmission intergénérationnelle où le passé se partage dans le présent.",
-    "keywords": ["Web Design", "Graphic Design","Web Development", "Three.js", "Javascript", "HTML", "CSS","3D Graphics", "UX/UI", "Creative coding", "Data visualization"],
+    "keywords": ["Web Design", "Graphic Design","Web Development", "Three.js", "Javascript", "HTML", "CSS","3D Graphics", "UI/UX Design", "Creative coding", "Data visualization"],
     "images": [
       "images/magnetic1.png",
       "images/magnetic2.png",
@@ -68,7 +68,7 @@
     "title": "LET'S ACT NOW",
     "video": "service-design.mp4",
     "description": "Un site web mobile immersif pour sensibiliser et inspirer l’action autour des Objectifs de Développement Durable (ODD). Let’s Act Now propose une série de sites web mobiles, chacun conçu comme un one-page interactif, dédié à un Objectif de Développement Durable (ODD). À travers des visuels et des vidéos percutants et des animations 3D, chaque page explore les enjeux globaux qui façonnent notre futur. Les visiteurs sont plongés dans une expérience où chaque élément visuel – des photos intrigantes aux séquences animées – est conçu pour éveiller la curiosité, provoquer des réflexions et inciter à l’engagement. Ce projet vise à rendre les ODD accessibles, impactants et engageants pour mobiliser un public large autour des défis mondiaux. Avec Let’s Act Now, l’objectif est clair : transformer la prise de conscience en action concrète.Projet en collaboration avec Quentin Kohler , Gabrielle Coué & Kristina Yenza.",
-    "keywords": ["Graphic Design", "Photography", "Social Media" , "Design", "Web Design", "Campaign"],
+    "keywords": ["Graphic Design", "Photography", "Social Media" , "Design", "Web Design", "Campaign", "UI/UX Design"],
     "images": [
       "images/servicedesign1.jpg",
       "images/servicedesign2.jpg",
@@ -93,7 +93,7 @@
     "video": "asian-animation-festival.mp4",
   "videoAdditional": "asian-animation-festival.mp4",
     "description": "Asian Animation Festival est un festival fictif réalisé dans le cadre du cours Dynamic Identities en première année de l'ECAL. J'ai réalisé l'identité d'un festival d'animation en utilisant les lettres 'A' de asian et animation afin de créer des mascottes.",
-    "keywords": ["Web Design","Graphic Design", "Design", "Animation", "Illustration", "Dynamic Identity", "Javascript"],
+    "keywords": ["Web Design","Graphic Design", "Design", "Animation", "Illustration", "Dynamic Identity", "Javascript", "UI/UX Design"],
     "images": [
       "images/dynamic1.jpg",
       "images/dynamic2.jpg",
@@ -143,7 +143,7 @@
     "title": "Hurry up!",
     "video": "hurry-up.mp4",
     "description": "Un jeu vidéo réalisé en première année à l'ECAL avec le programme Unity en mêlant création d’illustration et programmation en C#.",
-    "keywords": ["Interaction", "Design", "Unity", "Illustration", "Game Design", "2D", "CSharp", "Illustration", "2D"],
+    "keywords": ["Interaction", "Design", "Unity", "Illustration", "Game Design", "2D", "CSharp", "Illustration", "2D", "UI/UX Design"],
     "images": [
 
       "images/hurry1.png",
@@ -183,7 +183,7 @@
     "title": "StreamForBots",
     "video": "streamforbots.mp4",
     "description": "Projet de site web interactif réalisé en 3ème année à l'ECAL. Mon concept était de réaliser une plateforme de streaming pour robots interdit aux humains.",
-    "keywords": ["Web Design", "Web Development", "Interaction", "Javascript", "HTML", "CSS", "LLM Ollama", "IA", "3D", "Blender", "Three.js", "Graphic Design"],
+    "keywords": ["Web Design", "Web Development", "Interaction", "Javascript", "HTML", "CSS", "LLM Ollama", "IA", "3D", "Blender", "Three.js", "Graphic Design", "UI/UX Design"],
     "images": [
       "images/stream1.png",
       "images/stream2.png",
@@ -208,7 +208,7 @@
       "images/chlorys1.png",
       "images/chlorys2.png",
       "images/chlorys3.png",
-      "images/cat4.png"
+      "images/chlorys4.png"
     ]
   }
   

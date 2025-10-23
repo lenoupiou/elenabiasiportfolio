@@ -7,7 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
   document.body.insertBefore(filterContainer, grid); // place above grid
 
   // Define your filters
-  const filters = ["3D", "VR", "Web Design", "Graphic Design", "Illustration"];
+  const filters = [
+    "3D",
+    "UI/UX Design",
+    "VR",
+    "Web Design",
+    "Graphic Design",
+    "Illustration",
+  ];
   const activeFilters = new Set(); // store active ones
 
   filters.forEach((filterName) => {
@@ -191,8 +198,11 @@ document.addEventListener("DOMContentLoaded", function () {
           // Pause the clicked video to prevent overlap with page video
           // video.pause();
 
-          // ✅ Add Vimeo player only for "Magnetic Fragment"
-          if (data[i].title === "Magnetic Fragments") {
+          // ✅ Add Vimeo player only for "Magnetic Fragments" or "Before Life"
+          if (
+            data[i].title === "Magnetic Fragments" ||
+            data[i].title === "Before Life"
+          ) {
             // Remove old Vimeo iframe if any
             const oldVimeo = document.getElementById("vimeoPlayer");
             if (oldVimeo) oldVimeo.remove();
@@ -200,8 +210,15 @@ document.addEventListener("DOMContentLoaded", function () {
             // Create a Vimeo iframe player
             const vimeoIframe = document.createElement("iframe");
             vimeoIframe.id = "vimeoPlayer";
-            vimeoIframe.src =
-              "https://player.vimeo.com/video/1118741569?h=a02ba7cca7";
+
+            // Assign Vimeo URLs based on title
+            if (data[i].title === "Magnetic Fragments") {
+              vimeoIframe.src =
+                "https://player.vimeo.com/video/1118741569?h=a02ba7cca7";
+            } else if (data[i].title === "Before Life") {
+              vimeoIframe.src = "https://player.vimeo.com/video/1129842544?";
+            }
+
             vimeoIframe.width = "100%";
             vimeoIframe.height = "480";
             vimeoIframe.frameBorder = "0";
@@ -209,8 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
               "autoplay; fullscreen; picture-in-picture; clipboard-write";
             vimeoIframe.allowFullscreen = true;
 
-            // Insert the Vimeo player just below the main project video
-            // ➕ Insert the Vimeo player after pageContent (so it's below everything)
+            // ➕ Insert the Vimeo player after pageContent
             pageContent.insertAdjacentElement("afterend", vimeoIframe);
           } else {
             // Remove Vimeo player if switching to another project
