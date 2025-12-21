@@ -161,11 +161,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // Create video element for the grid
         const video = document.createElement("video");
         video.src = `imgTitre/${data[i].video}`;
-        video.alt = `Image${i + 1}.mp4`;
+        video.poster = `imgTitre/${data[i].thumbnail}`; // 👈 thumbnail
         video.loop = true;
         video.muted = true;
         video.playsInline = true;
-
+        video.preload = "none"; // 👈 prevents heavy loading
         // Start videos paused
         video.pause();
 
