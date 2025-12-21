@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function () {
           projectVideo.play(); // Ensure it starts playing
           projectTitle.textContent = data[i].title;
           projectDescription.textContent = data[i].description;
-          keywords.textContent = data[i].keywords.join(" + ");
+          keywords.textContent = data[i].keywords.join(" , ");
 
           // Pause the clicked video to prevent overlap with page video
           // video.pause();

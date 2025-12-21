@@ -20,7 +20,7 @@
     "title": "Magnetic Fragments",
     "video": "magnetic-fragments.mp4",
     "thumbnail": "magnetic-fragments.jpg",
-    "description": "Projet de diplome de bachelor à l'ECAL...",
+    "description": "Projet de diplome de bachelor à l'ECAL. Avant l’essor du numérique et des réseaux sociaux, les moments du quotidien étaient capturés sur supports analogiques, puis visionnés en famille de manière linéaire. Ces longues cassettes VHS, faites de séquences successives, ont peu à peu disparu, victimes de leur obsolescence. Magnetic Fragments propose de redécouvrir ces souvenirs oubliés via une interface web tridimensionnelle où chaque bulle incarne un souvenir à explorer et commenter. Destinée à un cercle privé, la plateforme collaborative offre une navigation libre, revisitant les fragments de souvenirs de façon dynamique et rompant avec la structure monotone des anciens visionnages. Magnetic Fragments devient ainsi un lieu de transmission intergénérationnelle où le passé se partage dans le présent.",
     "keywords": ["Web Design", "Graphic Design","Web Development", "Three.js", "Javascript", "HTML", "CSS","3D Graphics", "UI/UX Design", "Creative coding", "Data visualization"],
     "images": [
       "images/magnetic1.png",
@@ -29,12 +29,12 @@
       "images/magnetic4.JPG"
     ]
   },
-
-  {
+    {
     "title": "Fragments Incubés",
     "video": "fragments-incubes.mp4",
     "thumbnail": "fragments-incubes.jpg",
-    "description": "Projet en réalité augmentée...",
+
+    "description": "Projet en réalité augmentée sur le thème de l'amnésie infantile et de l'utilisation de mes vidéos d'enfance. Le principe de l'expérience est d'explorer à la première personne mes souvenirs d'enfance, de la gestation dans le ventre de ma mère, à l'accouchement et finalement à la petite enfance. Les bandes audio sont toutes extraites à partir de mes archives VHS familiales.",
     "keywords": ["3D", "Animation", "Blender", "VR", "Gaussian Splatting"],
     "images": [
       "images/incube1.png",
@@ -43,12 +43,13 @@
       "images/incube4.png"
     ]
   },
-
+  
   {
     "title": "Toum",
     "video": "toum.mp4",
     "thumbnail": "toum.jpg",
-    "description": "TOUM est un livre de recettes thaïlandaise...",
+
+    "description": "TOUM est un livre de recettes thaïlandaise re-designé dans le cadre du cours d'édition de ma 1ère année à l'ECAL dirigé par Giliane Cachin. Le choix de ce livre a été fait avec une intention de renouer avec mes origines thaïlandaises. Ma mère utilisait ce livre pour cuisiner quand j'étais enfant.",
     "keywords": ["Graphic Design", "Design", "Ouvrage", "Impression"],
     "images": [
       "images/toum1.png",
@@ -62,7 +63,7 @@
     "title": "Takashi Murakami Triptyque",
     "video": "takashi.mp4",
     "thumbnail": "takashi.jpg",
-    "description": "Trois animations 3D réalisées...",
+    "description": "Trois animations 3D réalisées avec Cinema4D dans le cadre du cours de Benjamin Muzzin en 1ère année Bachelor Media & Interaction Design à l'ECAL. Le but était de réinterpréter une œuvre d'artiste contemporain. Pour ce projet, j'ai choisi de m'inspirer de l'artiste Takashi Murakami et de sa sculpture 'DOB in the strange forest'.",
     "keywords": ["3D", "Animation", "Cinema4D"],
     "images": [
       "images/murakami1.png",
@@ -72,12 +73,12 @@
     ]
   },
 
-  {
+    {
     "title": "LET'S ACT NOW",
     "video": "service-design.mp4",
     "thumbnail": "service-design.jpg",
-    "description": "Un site web mobile immersif...",
-    "keywords": ["Graphic Design", "Photography", "Social Media", "Design", "Web Design", "Campaign", "UI/UX Design"],
+    "description": "Un site web mobile immersif pour sensibiliser et inspirer l’action autour des Objectifs de Développement Durable (ODD). Let’s Act Now propose une série de sites web mobiles, chacun conçu comme un one-page interactif, dédié à un Objectif de Développement Durable (ODD). À travers des visuels et des vidéos percutants et des animations 3D, chaque page explore les enjeux globaux qui façonnent notre futur. Les visiteurs sont plongés dans une expérience où chaque élément visuel – des photos intrigantes aux séquences animées – est conçu pour éveiller la curiosité, provoquer des réflexions et inciter à l’engagement. Ce projet vise à rendre les ODD accessibles, impactants et engageants pour mobiliser un public large autour des défis mondiaux. Avec Let’s Act Now, l’objectif est clair : transformer la prise de conscience en action concrète.Projet en collaboration avec Quentin Kohler , Gabrielle Coué & Kristina Yenza.",
+    "keywords": ["Graphic Design", "Photography", "Social Media" , "Design", "Web Design", "Campaign", "UI/UX Design"],
     "images": [
       "images/servicedesign1.jpg",
       "images/servicedesign2.jpg",
@@ -85,12 +86,11 @@
       "images/servicedesign4.jpg"
     ]
   },
-
   {
     "title": "Fishtank",
     "video": "fishtank.mp4",
     "thumbnail": "fishtank.jpg",
-    "description": "Dans le cadre du workshop FISHTANK...",
+    "description": "Dans le cadre du workshop FISHTANK en 2ème année à l'ECAL en collaboration avec le studio YONK, j'ai réalisé un personnage et un univers fantastique à l'aide de la technique de sculpting en VR. L'animation et les textures ont été réalisées avec le logiciel de 3D Blender.",
     "keywords": ["3D", "Animation", "Blender", "VR", "VRsculpt"],
     "images": [
       "images/yonk1.png",
@@ -99,13 +99,12 @@
       "images/yonk4.png"
     ]
   },
-
   {
     "title": "Asian Animation Festival",
     "video": "asian-animation-festival.mp4",
     "thumbnail": "asian-animation-festival.jpg",
     "videoAdditional": "asian-animation-festival.mp4",
-    "description": "Asian Animation Festival est un festival fictif...",
+    "description": "Asian Animation Festival est un festival fictif réalisé dans le cadre du cours Dynamic Identities en première année de l'ECAL. J'ai réalisé l'identité d'un festival d'animation en utilisant les lettres 'A' de asian et animation afin de créer des mascottes.",
     "keywords": ["Web Design","Graphic Design", "Design", "Animation", "Illustration", "Dynamic Identity", "Javascript", "UI/UX Design"],
     "images": [
       "images/dynamic1.jpg",
@@ -114,12 +113,12 @@
       "images/dynamic4.jpg"
     ]
   },
-
+  
   {
     "title": "Cozy Fort",
     "video": "cozy-fort.mp4",
     "thumbnail": "cozy-fort.jpg",
-    "description": "Projet de réalité augmentée (AR)...",
+    "description": "Projet de réalité augmentée (AR) réalisé en collaboration avec Aryana Noorani. Le concept du projet était de permettre à l'utilisateur de se réfugier dans une cabane nostalgique et cozy.",
     "keywords": ["AR", "VR", "Unity", "3D", "Cinema4D", "Blender", "CSharp"],
     "images": [
       "images/cozy1.png",
@@ -128,12 +127,11 @@
       "images/cozy4.png"
     ]
   },
-
   {
     "title": "Who are you really?",
     "video": "who-are-you-really.mp4",
     "thumbnail": "who-are-you-really.jpg",
-    "description": "Un projet réalisé dans le cadre...",
+    "description": "Un projet réalisé dans le cadre de la semaine beyond the screen en première année de l'ECAL en collaboration avec Emilie Maier. Le principe était de réaliser un objet qui puisse communiquer avec l'utilisateur avec un objet tangible.",
     "keywords": ["Interaction", "Graphic Design", "Objet", "Arduino", "Prototyping", "Tangible"],
     "images": [
       "images/talk1.png",
@@ -142,12 +140,12 @@
       "images/talk4.png"
     ]
   },
-
+ 
   {
     "title": "Mom wants me to be a doctor",
     "video": "mom.mp4",
     "thumbnail": "mom.jpg",
-    "description": "Un jeu vidéo réalisé...",
+    "description": "Un jeu vidéo réalisé dans le cadre du cours Unreal Engine en 2ème année à l'ECAL. Le concept du jeu est de représenter la pression familiale à travers une expérience narrative. Le personnage explore un univers où elle doit choisir sa destinée. Finalement elle décide de suivre son propre chemin et sa bulle éclate.",
     "keywords": ["Unreal Engine", "Game Design", "Game Development", "3D", "Blender", "Illustration"],
     "images": [
       "images/unreal1.png",
@@ -156,14 +154,14 @@
       "images/unreal4.png"
     ]
   },
-
-  {
+   {
     "title": "Hurry up!",
     "video": "hurry-up.mp4",
     "thumbnail": "hurry-up.jpg",
-    "description": "Un jeu vidéo réalisé en première année...",
-    "keywords": ["Interaction", "Design", "Unity", "Illustration", "Game Design", "2D", "CSharp", "UI/UX Design"],
+    "description": "Un jeu vidéo réalisé en première année à l'ECAL avec le programme Unity en mêlant création d’illustration et programmation en C#.",
+    "keywords": ["Interaction", "Design", "Unity", "Illustration", "Game Design", "2D", "CSharp", "Illustration", "2D", "UI/UX Design"],
     "images": [
+
       "images/hurry1.png",
       "images/hurry2.png",
       "images/hurry3.png",
@@ -173,12 +171,11 @@
       "images/hurry7.png"
     ]
   },
-
   {
     "title": "Sound Toy",
     "video": "sound-toy.mp4",
     "thumbnail": "sound-toy.jpg",
-    "description": "Projet réalisé dans le cadre du cours...",
+    "description": "Projet réalisé dans le cadre du cours de creative coding de Gael Hugo en 1ère année Bachelor Media & Interaction Design à l'ECAL.",
     "keywords": ["Creative Coding", "Sound", "Javascript", "HTML", "CSS", "Design", "Interaction", "Illustration", "2D"],
     "images": [
       "images/sound1.png",
@@ -187,12 +184,11 @@
       "images/sound4.png"
     ]
   },
-
   {
     "title": "Hello World",
     "video": "hello-world.mp4",
     "thumbnail": "hello-world.jpg",
-    "description": "Projet de clip vidéo réalisé...",
+    "description": "Projet de clip vidéo réalisé dans le cadre du cours de Sami Benhadj en 2ème année à l'ECAL. Ce clip vidéo a été créé avec Aryana Noorani en collaboration avec l'artiste Suisse RougeHotel.",
     "keywords": ["3D", "Animation", "Blender", "Music Video", "Clip", "Music"],
     "images": [
       "images/hello4.png",
@@ -201,12 +197,11 @@
       "images/hello1.png"
     ]
   },
-
   {
     "title": "StreamForBots",
     "video": "streamforbots.mp4",
     "thumbnail": "streamforbots.jpg",
-    "description": "Projet de site web interactif...",
+    "description": "Projet de site web interactif réalisé en 3ème année à l'ECAL. Mon concept était de réaliser une plateforme de streaming pour robots interdit aux humains.",
     "keywords": ["Web Design", "Web Development", "Interaction", "Javascript", "HTML", "CSS", "LLM Ollama", "IA", "3D", "Blender", "Three.js", "Graphic Design", "UI/UX Design"],
     "images": [
       "images/stream1.png",
@@ -220,16 +215,16 @@
     "title": "It rains cats and dogs",
     "video": "it-rains-cats-and-dogs.mp4",
     "thumbnail": "it-rains-cats-and-dogs.jpg",
-    "description": "Une animation motion design réalisée...",
+    "description": "Une animation motion design réalisée avec After Effect dans le cadre de la semaine After Effect de deuxième année à l'ECAL.",
     "keywords": ["Motion Design", "Animation", "After Effect", "Illustration", "2D"]
+   
   },
-
   {
     "title": "CHLORYS GENEVE",
     "video": "chlorys.mp4",
     "thumbnail": "chlorys.jpg",
-    "description": "J’ai eu l’opportunité de m’occuper...",
-    "keywords": ["Graphic Design", "Marketing", "Social Media", "Design", "Branding", "Print", "Packaging"],
+    "description": "J’ai eu l’opportunité de m’occuper de toute la communication visuelle de CHLORYS lorsque j'étais graphiste au sein de l'entreprise : Publicités, Visuels de réseaux sociaux, Documents interne, Brochures clients, Packaging de produits et coffrets, PLV, Set administratif, Campagnes visuelles etc.",
+    "keywords": ["Graphic Design", "Marketing", "Social Media" , "Design", "Branding", "Print", "Packaging"],
     "images": [
       "images/chlorys1.png",
       "images/chlorys2.png",
@@ -237,4 +232,5 @@
       "images/chlorys4.png"
     ]
   }
+  
 ]
