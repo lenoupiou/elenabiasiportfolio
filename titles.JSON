@@ -231,6 +231,19 @@
       "images/chlorys3.png",
       "images/chlorys4.png"
     ]
+  },
+  {
+    "title": "AFFICHES",
+    "video": "affiche.mp4",
+    "thumbnail": "affiche1.png",
+    "description": "Multiples affiches réalisées au cours de ma formation de graphiste.",
+    "keywords": ["Graphic Design", "Marketing", "Social Media" , "Design", "Branding", "Print", "Packaging"],
+    "images": [
+      "images/affiche1.png",
+      "images/affiche2.png",
+      "images/affiche3.png",
+      "images/affiche4.jpeg"
+    ]
   }
   
 ]

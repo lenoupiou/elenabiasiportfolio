@@ -44,7 +44,7 @@ body {
 .ElenaBiasi {
   z-index: 100;
   width: 90%;
-  position: fixed;
+  /* position: fixed; */
   font-family: Karla;
   padding: 40px;
   font-size: 4vw;
@@ -395,7 +395,7 @@ body {
   font-family: Karla;
   border-radius: 20px;
   padding: 8px 20px;
-  margin-top: 20%;
+  margin-top: 10px;
   margin-right: 10px;
   cursor: pointer;
   transition: all 0.2s ease;
