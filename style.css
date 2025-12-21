@@ -103,18 +103,33 @@ body {
   padding-left: 20px;
 }
 
-#keywords {
-  color: blue;
+/* #keywords {
+  color: white;
   font-weight: bold;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  font-size: clamp(14px, 1.2vw, 20px);
-  /* border-radius: 10px; */
-  /* background-color: blue; */
+  font-size: 12px;
+  border-radius: 10px;
+  background-color: blue;
   text-align: center;
-  /* backdrop-filter: blur(10px); */
+} */
+
+#keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.keyword-bubble {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: blue;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  color: white;
 }
 
 #projectVideo {

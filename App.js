@@ -193,8 +193,15 @@ document.addEventListener("DOMContentLoaded", function () {
           projectVideo.play(); // Ensure it starts playing
           projectTitle.textContent = data[i].title;
           projectDescription.textContent = data[i].description;
-          keywords.textContent = data[i].keywords.join(" , ");
+          keywords.innerHTML = "";
 
+          // Create a bubble for each keyword
+          data[i].keywords.forEach((word) => {
+            const bubble = document.createElement("span");
+            bubble.classList.add("keyword-bubble");
+            bubble.textContent = word;
+            keywords.appendChild(bubble);
+          });
           // Pause the clicked video to prevent overlap with page video
           // video.pause();
 
