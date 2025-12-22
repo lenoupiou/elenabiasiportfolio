@@ -239,6 +239,10 @@ body {
 
 .grid-item {
   text-align: center;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* 👈 choose ratio you like */
+  overflow: hidden;
+  position: relative;
   /* background: white; */
   /* padding: 5px; */
   /* border-radius: 1px; */
