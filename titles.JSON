@@ -1,6 +1,7 @@
 [
   {
     "title": "Before Life",
+    "thumbnailType": "video",
     "video": "before-life.mp4",
     "thumbnail": "before-life.jpg",
     "description": "Before Life est un court métrage de 1min30 explorant des thèmes tels que la vie, la mort et la réincarnation. La vidéo est réalisée dans le cadre du cours de 3D Graphics en 1ère année Bachelor Media & Interaction Design à l'ECAL, dirigé par Kylan Luginbühl. La séquence a été sélectionnée et diffusée dans le cadre de l'édition 2023 du DAZ Festival à Zürich.",
@@ -18,6 +19,7 @@
 
   {
     "title": "Magnetic Fragments",
+    "thumbnailType": "video",
     "video": "magnetic-fragments.mp4",
     "thumbnail": "magnetic-fragments.jpg",
     "description": "Projet de diplome de bachelor à l'ECAL. Avant l’essor du numérique et des réseaux sociaux, les moments du quotidien étaient capturés sur supports analogiques, puis visionnés en famille de manière linéaire. Ces longues cassettes VHS, faites de séquences successives, ont peu à peu disparu, victimes de leur obsolescence. Magnetic Fragments propose de redécouvrir ces souvenirs oubliés via une interface web tridimensionnelle où chaque bulle incarne un souvenir à explorer et commenter. Destinée à un cercle privé, la plateforme collaborative offre une navigation libre, revisitant les fragments de souvenirs de façon dynamique et rompant avec la structure monotone des anciens visionnages. Magnetic Fragments devient ainsi un lieu de transmission intergénérationnelle où le passé se partage dans le présent.",
@@ -31,6 +33,7 @@
   },
     {
     "title": "Fragments Incubés",
+    "thumbnailType": "video",
     "video": "fragments-incubes.mp4",
     "thumbnail": "fragments-incubes.jpg",
 
@@ -46,6 +49,7 @@
   
   {
     "title": "Toum",
+    "thumbnailType": "video",
     "video": "toum.mp4",
     "thumbnail": "toum.jpg",
 
@@ -61,6 +65,7 @@
 
   {
     "title": "Takashi Murakami Triptyque",
+    "thumbnailType": "video",
     "video": "takashi.mp4",
     "thumbnail": "takashi.jpg",
     "description": "Trois animations 3D réalisées avec Cinema4D dans le cadre du cours de Benjamin Muzzin en 1ère année Bachelor Media & Interaction Design à l'ECAL. Le but était de réinterpréter une œuvre d'artiste contemporain. Pour ce projet, j'ai choisi de m'inspirer de l'artiste Takashi Murakami et de sa sculpture 'DOB in the strange forest'.",
@@ -75,6 +80,7 @@
 
     {
     "title": "LET'S ACT NOW",
+    "thumbnailType": "video",
     "video": "service-design.mp4",
     "thumbnail": "service-design.jpg",
     "description": "Un site web mobile immersif pour sensibiliser et inspirer l’action autour des Objectifs de Développement Durable (ODD). Let’s Act Now propose une série de sites web mobiles, chacun conçu comme un one-page interactif, dédié à un Objectif de Développement Durable (ODD). À travers des visuels et des vidéos percutants et des animations 3D, chaque page explore les enjeux globaux qui façonnent notre futur. Les visiteurs sont plongés dans une expérience où chaque élément visuel – des photos intrigantes aux séquences animées – est conçu pour éveiller la curiosité, provoquer des réflexions et inciter à l’engagement. Ce projet vise à rendre les ODD accessibles, impactants et engageants pour mobiliser un public large autour des défis mondiaux. Avec Let’s Act Now, l’objectif est clair : transformer la prise de conscience en action concrète.Projet en collaboration avec Quentin Kohler , Gabrielle Coué & Kristina Yenza.",
@@ -88,6 +94,7 @@
   },
   {
     "title": "Fishtank",
+    "thumbnailType": "video",
     "video": "fishtank.mp4",
     "thumbnail": "fishtank.jpg",
     "description": "Dans le cadre du workshop FISHTANK en 2ème année à l'ECAL en collaboration avec le studio YONK, j'ai réalisé un personnage et un univers fantastique à l'aide de la technique de sculpting en VR. L'animation et les textures ont été réalisées avec le logiciel de 3D Blender.",
@@ -101,6 +108,7 @@
   },
   {
     "title": "Asian Animation Festival",
+    "thumbnailType": "video",
     "video": "asian-animation-festival.mp4",
     "thumbnail": "asian-animation-festival.jpg",
     "videoAdditional": "asian-animation-festival.mp4",
@@ -116,6 +124,7 @@
   
   {
     "title": "Cozy Fort",
+    "thumbnailType": "video",
     "video": "cozy-fort.mp4",
     "thumbnail": "cozy-fort.jpg",
     "description": "Projet de réalité augmentée (AR) réalisé en collaboration avec Aryana Noorani. Le concept du projet était de permettre à l'utilisateur de se réfugier dans une cabane nostalgique et cozy.",
@@ -129,6 +138,7 @@
   },
   {
     "title": "Who are you really?",
+    "thumbnailType": "video",
     "video": "who-are-you-really.mp4",
     "thumbnail": "who-are-you-really.jpg",
     "description": "Un projet réalisé dans le cadre de la semaine beyond the screen en première année de l'ECAL en collaboration avec Emilie Maier. Le principe était de réaliser un objet qui puisse communiquer avec l'utilisateur avec un objet tangible.",
@@ -143,6 +153,7 @@
  
   {
     "title": "Mom wants me to be a doctor",
+    "thumbnailType": "video",
     "video": "mom.mp4",
     "thumbnail": "mom.jpg",
     "description": "Un jeu vidéo réalisé dans le cadre du cours Unreal Engine en 2ème année à l'ECAL. Le concept du jeu est de représenter la pression familiale à travers une expérience narrative. Le personnage explore un univers où elle doit choisir sa destinée. Finalement elle décide de suivre son propre chemin et sa bulle éclate.",
@@ -156,6 +167,7 @@
   },
    {
     "title": "Hurry up!",
+    "thumbnailType": "video",
     "video": "hurry-up.mp4",
     "thumbnail": "hurry-up.jpg",
     "description": "Un jeu vidéo réalisé en première année à l'ECAL avec le programme Unity en mêlant création d’illustration et programmation en C#.",
@@ -173,6 +185,7 @@
   },
   {
     "title": "Sound Toy",
+    "thumbnailType": "video",
     "video": "sound-toy.mp4",
     "thumbnail": "sound-toy.jpg",
     "description": "Projet réalisé dans le cadre du cours de creative coding de Gael Hugo en 1ère année Bachelor Media & Interaction Design à l'ECAL.",
@@ -186,6 +199,7 @@
   },
   {
     "title": "Hello World",
+    "thumbnailType": "video",
     "video": "hello-world.mp4",
     "thumbnail": "hello-world.jpg",
     "description": "Projet de clip vidéo réalisé dans le cadre du cours de Sami Benhadj en 2ème année à l'ECAL. Ce clip vidéo a été créé avec Aryana Noorani en collaboration avec l'artiste Suisse RougeHotel.",
@@ -199,6 +213,7 @@
   },
   {
     "title": "StreamForBots",
+    "thumbnailType": "video",
     "video": "streamforbots.mp4",
     "thumbnail": "streamforbots.jpg",
     "description": "Projet de site web interactif réalisé en 3ème année à l'ECAL. Mon concept était de réaliser une plateforme de streaming pour robots interdit aux humains.",
@@ -213,6 +228,7 @@
 
   {
     "title": "It rains cats and dogs",
+    "thumbnailType": "video",
     "video": "it-rains-cats-and-dogs.mp4",
     "thumbnail": "it-rains-cats-and-dogs.jpg",
     "description": "Une animation motion design réalisée avec After Effect dans le cadre de la semaine After Effect de deuxième année à l'ECAL.",
@@ -221,6 +237,7 @@
   },
   {
     "title": "CHLORYS GENEVE",
+    "thumbnailType": "image",
     "video": "chlorys.mp4",
     "thumbnail": "chlorys.jpg",
     "description": "J’ai eu l’opportunité de m’occuper de toute la communication visuelle de CHLORYS lorsque j'étais graphiste au sein de l'entreprise : Publicités, Visuels de réseaux sociaux, Documents interne, Brochures clients, Packaging de produits et coffrets, PLV, Set administratif, Campagnes visuelles etc.",
@@ -237,6 +254,7 @@
   },
   {
     "title": "Affiches",
+    "thumbnailType": "image",
     "video": "affiche.mp4",
     "thumbnail": "affiche1.png",
     "description": "Multiples affiches réalisées au cours de ma formation de graphiste.",
@@ -250,6 +268,7 @@
   },
   {
     "title": "Illustrations",
+    "thumbnailType": "image",
     "video": "art.mp4",
     "thumbnail": "art1.jpg",
     "description": "Multiples affiches réalisées au cours de ma formation de graphiste.",

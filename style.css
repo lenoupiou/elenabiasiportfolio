@@ -490,6 +490,11 @@ body {
   background-color: rgb(4, 0, 255);
 }
 
+footer {
+  padding-left: 20px;
+  color: blue;
+}
+
 .grid-item:hover p {
   visibility: visible; /* Show on hover */
   opacity: 1; /* Fade in */
