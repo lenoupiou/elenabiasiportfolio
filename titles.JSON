@@ -21,7 +21,7 @@
     "video": "magnetic-fragments.mp4",
     "thumbnail": "magnetic-fragments.jpg",
     "description": "Projet de diplome de bachelor à l'ECAL. Avant l’essor du numérique et des réseaux sociaux, les moments du quotidien étaient capturés sur supports analogiques, puis visionnés en famille de manière linéaire. Ces longues cassettes VHS, faites de séquences successives, ont peu à peu disparu, victimes de leur obsolescence. Magnetic Fragments propose de redécouvrir ces souvenirs oubliés via une interface web tridimensionnelle où chaque bulle incarne un souvenir à explorer et commenter. Destinée à un cercle privé, la plateforme collaborative offre une navigation libre, revisitant les fragments de souvenirs de façon dynamique et rompant avec la structure monotone des anciens visionnages. Magnetic Fragments devient ainsi un lieu de transmission intergénérationnelle où le passé se partage dans le présent.",
-    "keywords": ["Web Design", "Graphic Design","Web Development", "Three.js", "Javascript", "HTML", "CSS","3D Graphics", "UI/UX Design", "Creative coding", "Data visualization"],
+    "keywords": ["Web Design", "Graphic Design","Web Development", "Three.js", "Javascript", "HTML", "CSS","3D", "UI/UX Design", "Creative coding", "Data visualization"],
     "images": [
       "images/magnetic1.png",
       "images/magnetic2.png",
