@@ -39,6 +39,8 @@ body {
   background-color: white;
   font-family: Karla;
   overflow-x: hidden;
+  font-size: clamp(15px, 1.1vw, 18px);
+  line-height: 1.5;
 }
 
 .ElenaBiasi {
@@ -49,8 +51,8 @@ body {
   font-family: Karla;
   padding: 40px;
   padding-top: 70vh;
-  font-size: 1.5rem;
-  line-height: 1.8rem;
+  font-size: clamp(1.1rem, 2.2vw, 1.6rem);
+  line-height: clamp(1.4rem, 2.8vw, 2rem);
   color: blue;
   transition:
     filter 0.2s ease,
@@ -161,7 +163,7 @@ body {
   padding: 6px 12px;
   border-radius: 999px;
   background: blue;
-  font-size: 1rem;
+  font-size: clamp(0.75rem, 1vw, 0.9rem);
   white-space: nowrap;
   color: white;
 }
@@ -212,7 +214,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1.8vw, 1.5rem);
 
   border: none;
   border-radius: 50%; /* 👈 true circle */
@@ -234,17 +236,17 @@ body {
 }
 
 #projectTitle {
-  font-size: 5vw;
   width: 100%;
   /* font-family: Karla; */
-  line-height: 5.2vw;
+  font-size: clamp(1.8rem, 4.5vw, 3.2rem);
+  line-height: 1.1;
   color: blue;
   font-weight: bold;
 }
 #projectDescription {
-  font-size: 1.2vw;
+  font-size: clamp(0.95rem, 1.4vw, 1.15rem);
+  line-height: 1.6;
   color: blue;
-  line-height: 1.6vw;
 }
 
 .grid-container {
@@ -282,7 +284,7 @@ body {
 }
 
 #contactOverlay p {
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 3vw, 2rem);
   color: black;
   text-align: center;
   margin: 0;
@@ -292,7 +294,7 @@ body {
   position: absolute;
   top: 20px;
   left: 20px;
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 3vw, 2rem);
   cursor: pointer;
   color: black;
   user-select: none;
