@@ -61,14 +61,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const contactOverlay = document.createElement("div");
   contactOverlay.id = "contactOverlay";
 
+  const cv = document.getElementById("cv");
   // Create back arrow
   const backArrow = document.createElement("div");
   backArrow.className = "back-arrow";
-  backArrow.textContent = "←"; // Left arrow symbol
-  contactOverlay.appendChild(backArrow);
+  backArrow.textContent = "x";
 
-  const cv = document.getElementById("cv");
+  // Grab CV
 
+  // Put arrow INSIDE cv
+  cv.prepend(backArrow);
   // // Create contact text
   // const contactText = document.createElement("p");
   // contactText.textContent = "Contact me at : elena_biasi@hotmail.com";
@@ -80,13 +82,13 @@ document.addEventListener("DOMContentLoaded", function () {
   // Show overlay when clicking "contact"
   const contactBtn = document.getElementById("contact");
   contactBtn.addEventListener("click", () => {
-    contactOverlay.style.display = "flex";
+    // contactOverlay.style.display = "flex";
     cv.style.display = "block";
   });
 
   // Close overlay when clicking the back arrow
   backArrow.addEventListener("click", () => {
-    contactOverlay.style.display = "none";
+    // contactOverlay.style.display = "none";
     cv.style.display = "none";
   });
 
