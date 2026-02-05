@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Create the close button for the page
   const closePageButton = document.createElement("button");
   closePageButton.id = "closePage";
-  closePageButton.textContent = "X";
+  closePageButton.textContent = "⬅";
   pageContent.appendChild(closePageButton);
 
   const contact = document.getElementById("contact");
@@ -85,6 +85,11 @@ document.addEventListener("DOMContentLoaded", function () {
   backArrow.addEventListener("click", () => {
     contactOverlay.style.display = "none";
   });
+
+  const boxTitle = document.createElement("div");
+  boxTitle.id = "boxTitle";
+  pageContent.appendChild(boxTitle);
+
   // Create video, title, and description placeholders for the page
   const projectVideo = document.createElement("video");
   projectVideo.id = "projectVideo";
@@ -93,10 +98,6 @@ document.addEventListener("DOMContentLoaded", function () {
   projectVideo.muted = true; // Unmute the video
   projectVideo.playsInline = true; // Ensure it plays inline on mobile
   pageContent.appendChild(projectVideo);
-
-  const boxTitle = document.createElement("div");
-  boxTitle.id = "boxTitle";
-  pageContent.appendChild(boxTitle);
 
   const projectTitle = document.createElement("h1");
   projectTitle.id = "projectTitle";
@@ -268,7 +269,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     })
     .catch((error) =>
-      console.error("Erreur lors du chargement du JSON :", error)
+      console.error("Erreur lors du chargement du JSON :", error),
     );
 
   // Close the "page" when clicking the close button
