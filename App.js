@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             vimeoIframe.width = "100%";
-            vimeoIframe.height = "480";
+            vimeoIframe.height = "480vw";
             vimeoIframe.frameBorder = "0";
             vimeoIframe.allow =
               "autoplay; fullscreen; picture-in-picture; clipboard-write";
