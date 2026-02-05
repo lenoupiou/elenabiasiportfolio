@@ -88,6 +88,88 @@ body {
   transform: scale(1.05);
   opacity: 0.85;
 }
+/* CV container */
+.cv {
+  position: fixed; /* stay above other content */
+  top: 50%; /* center vertically */
+  left: 50%; /* center horizontally */
+  transform: translate(-50%, -50%); /* true center */
+  width: 90%; /* responsive width */
+  max-width: 800px; /* cap for large screens */
+  max-height: 90vh; /* allow scrolling if too tall */
+  overflow-y: auto; /* scroll inside if content exceeds height */
+  padding: 40px 20px;
+  background-color: white; /* make it visible */
+  border-radius: 12px;
+  font-family: Karla, sans-serif;
+  color: #0a0a0a;
+  display: none; /* initially hidden */
+  z-index: 1000; /* on top of everything */
+}
+
+/* CV Title */
+.titreCV {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: bold;
+  color: blue;
+  margin-bottom: 30px;
+}
+
+/* Individual CV item */
+.cv-item {
+  margin-bottom: 25px;
+  border-left: 3px solid blue;
+  padding-left: 20px;
+  position: relative;
+}
+
+/* .cv-item::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: blue;
+  border-radius: 50%;
+  position: absolute;
+  left: -7px;
+  top: 5px;
+} */
+
+.cv-role {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+  color: blue;
+}
+
+.cv-date {
+  font-size: 0.9rem;
+  color: blue;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.cv-company {
+  color: blue;
+
+  font-size: 1rem;
+  font-style: italic;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.cv-description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+/* Make it scrollable on mobile if needed */
+@media (max-width: 768px) {
+  .cv {
+    width: 95%;
+    padding: 20px 15px;
+  }
+}
 
 @keyframes scrollHint {
   0% {
@@ -320,7 +402,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 10000;
+  z-index: 1;
 }
 
 #contactOverlay p {

@@ -67,10 +67,12 @@ document.addEventListener("DOMContentLoaded", function () {
   backArrow.textContent = "←"; // Left arrow symbol
   contactOverlay.appendChild(backArrow);
 
-  // Create contact text
-  const contactText = document.createElement("p");
-  contactText.textContent = "Contact me at : elena_biasi@hotmail.com";
-  contactOverlay.appendChild(contactText);
+  const cv = document.getElementById("cv");
+
+  // // Create contact text
+  // const contactText = document.createElement("p");
+  // contactText.textContent = "Contact me at : elena_biasi@hotmail.com";
+  // contactOverlay.appendChild(contactText);
 
   // Add overlay to body
   document.body.appendChild(contactOverlay);
@@ -79,11 +81,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const contactBtn = document.getElementById("contact");
   contactBtn.addEventListener("click", () => {
     contactOverlay.style.display = "flex";
+    cv.style.display = "block";
   });
 
   // Close overlay when clicking the back arrow
   backArrow.addEventListener("click", () => {
     contactOverlay.style.display = "none";
+    cv.style.display = "none";
   });
 
   const boxTitle = document.createElement("div");
