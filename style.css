@@ -414,15 +414,21 @@ body {
 }
 
 #contactOverlay .back-arrow {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: clamp(1.4rem, 3vw, 2rem);
+  position: fixed;
+  top: env(safe-area-inset-top, 20px);
+  left: env(safe-area-inset-left, 20px);
+  font-size: clamp(1.4rem, 5vw, 2rem);
   cursor: pointer;
   color: blue;
   user-select: none;
+  z-index: 1000;
 }
 
+@media (max-width: 768px) {
+  #contactOverlay .back-arrow {
+    position: fixed;
+  }
+}
 #contactOverlay .back-arrow :hover {
   opacity: 50%;
 }
