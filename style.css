@@ -288,7 +288,7 @@ body {
   padding: 6px 12px;
   border-radius: 999px;
   background: blue;
-  font-size: clamp(0.75rem, 1vw, 0.9rem);
+  font-size: clamp(1rem, 2vw, 1rem);
   white-space: nowrap;
   color: white;
 }
@@ -391,7 +391,6 @@ body {
 .contact:hover {
   cursor: pointer;
   color: blue;
-  text-decoration: underline;
 }
 #contactOverlay {
   position: fixed;
@@ -420,8 +419,12 @@ body {
   left: 20px;
   font-size: clamp(1.4rem, 3vw, 2rem);
   cursor: pointer;
-  color: black;
+  color: blue;
   user-select: none;
+}
+
+#contactOverlay .back-arrow :hover {
+  opacity: 50%;
 }
 
 /* Desktop – up to 3 columns max */
