@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Create the close button for the page
   const closePageButton = document.createElement("button");
   closePageButton.id = "closePage";
-  closePageButton.textContent = "⬅";
+  closePageButton.textContent = "←";
   pageContent.appendChild(closePageButton);
 
   const contact = document.getElementById("contact");

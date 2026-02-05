@@ -49,8 +49,8 @@ body {
   font-family: Karla;
   padding: 40px;
   padding-top: 70vh;
-  font-size: 2vw;
-  line-height: 2.2vw;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
   color: blue;
   transition:
     filter 0.2s ease,
@@ -58,6 +58,18 @@ body {
   pointer-events: none;
 
   /* color: rgba(255, 255, 255, 0.8); */
+}
+
+@media (max-width: 768px) {
+  .ElenaBiasi {
+    position: relative; /* 👈 back to normal flow */
+    width: 100%;
+    padding: 20px;
+    top: auto;
+    transform: none;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .hautdepage {
