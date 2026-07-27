@@ -1,6 +1,43 @@
 document.addEventListener("DOMContentLoaded", function () {
   const grid = document.getElementById("grid");
 
+  // // Create filter buttons container
+  // const filterContainer = document.createElement("div");
+  // filterContainer.id = "filterContainer";
+  // document.body.insertBefore(filterContainer, grid); // place above grid
+
+  // // Define your filters
+  // const filters = [
+  //   "3D",
+  //   "UI/UX Design",
+  //   "VR",
+  //   "Web Design",
+  //   "Graphic Design",
+  //   "Illustration",
+  // ];
+  // const activeFilters = new Set(); // store active ones
+
+  // filters.forEach((filterName) => {
+  //   const btn = document.createElement("button");
+  //   btn.classList.add("filterButton");
+  //   btn.textContent = filterName;
+
+  //   btn.addEventListener("click", () => {
+  //     if (activeFilters.has(filterName)) {
+  //       // deactivate
+  //       activeFilters.delete(filterName);
+  //       btn.classList.remove("active");
+  //     } else {
+  //       // activate
+  //       activeFilters.add(filterName);
+  //       btn.classList.add("active");
+  //     }
+  //     applyFilters(); // update grid display
+  //   });
+
+  //   filterContainer.appendChild(btn);
+  // });
+
   // Create filter buttons container
   const filterContainer = document.createElement("div");
   filterContainer.id = "filterContainer";
@@ -15,7 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
     "Graphic Design",
     "Illustration",
   ];
-  const activeFilters = new Set(); // store active ones
+
+  let activeFilter = null; // store only one active filter
 
   filters.forEach((filterName) => {
     const btn = document.createElement("button");
@@ -23,16 +61,28 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.textContent = filterName;
 
     btn.addEventListener("click", () => {
-      if (activeFilters.has(filterName)) {
-        // deactivate
-        activeFilters.delete(filterName);
+      // If clicking the already active button, deactivate it
+      if (activeFilter === filterName) {
+        activeFilter = null;
         btn.classList.remove("active");
       } else {
-        // activate
-        activeFilters.add(filterName);
+        document.querySelectorAll(".filterButton").forEach((button) => {
+          button.classList.remove("active");
+        });
+
+        activeFilter = filterName;
         btn.classList.add("active");
       }
+
       applyFilters(); // update grid display
+
+      // Scroll to grid when clicking from the top of the page
+      if (window.scrollY < 100) {
+        grid.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
     });
 
     filterContainer.appendChild(btn);
@@ -92,10 +142,6 @@ document.addEventListener("DOMContentLoaded", function () {
     cv.style.display = "none";
   });
 
-  const boxTitle = document.createElement("div");
-  boxTitle.id = "boxTitle";
-  pageContent.appendChild(boxTitle);
-
   // Create video, title, and description placeholders for the page
   const projectVideo = document.createElement("video");
   projectVideo.id = "projectVideo";
@@ -104,6 +150,10 @@ document.addEventListener("DOMContentLoaded", function () {
   projectVideo.muted = true; // Unmute the video
   projectVideo.playsInline = true; // Ensure it plays inline on mobile
   pageContent.appendChild(projectVideo);
+
+  const boxTitle = document.createElement("div");
+  boxTitle.id = "boxTitle";
+  pageContent.appendChild(boxTitle);
 
   const projectTitle = document.createElement("h1");
   projectTitle.id = "projectTitle";
@@ -144,16 +194,31 @@ document.addEventListener("DOMContentLoaded", function () {
         ? item.dataset.keywords.split(",")
         : [];
 
-      if (
-        activeFilters.size === 0 ||
-        [...activeFilters].some((f) => keywords.includes(f))
-      ) {
+      if (!activeFilter || keywords.includes(activeFilter)) {
         item.style.display = "block";
       } else {
         item.style.display = "none";
       }
     });
   }
+  // function applyFilters() {
+  //   const items = document.querySelectorAll(".grid-item");
+
+  //   items.forEach((item) => {
+  //     const keywords = item.dataset.keywords
+  //       ? item.dataset.keywords.split(",")
+  //       : [];
+
+  //     if (
+  //       activeFilters.size === 0 ||
+  //       [...activeFilters].some((f) => keywords.includes(f))
+  //     ) {
+  //       item.style.display = "block";
+  //     } else {
+  //       item.style.display = "none";
+  //     }
+  //   });
+  // }
 
   // Load JSON data
   fetch("titles.JSON")
