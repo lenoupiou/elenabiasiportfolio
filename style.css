@@ -34,10 +34,12 @@ body {
   width: 50%;
   /* position: fixed; */
   font-family: Karla;
+  font-size: 1rem;
+  line-height: 1rem;
   padding: 40px;
   padding-top: 60vh;
-  font-size: clamp(1.1rem, 2.2vw, 1.6rem);
-  line-height: clamp(1.4rem, 2.8vw, 2rem);
+  /* font-size: clamp(1.1rem, 2.2vw, 1.6rem); */
+  /* line-height: clamp(1.4rem, 2.8vw, 2rem); */
   color: rgb(89, 89, 207);
   transition:
     filter 0.2s ease,
@@ -47,14 +49,26 @@ body {
   /* color: rgba(255, 255, 255, 0.8); */
 }
 
-.ElenaBiasi::after {
+/* .ElenaBiasi::after {
   content: "↓";
   display: block;
   margin-top: 10px;
   font-size: clamp(1.2rem, 2vw, 1.6rem);
   color: white;
-
   opacity: 0.6;
+  text-align: center;
+  animation: scrollHint 1.8s ease-in-out infinite;
+} */
+
+.arrow {
+  position: fixed;
+
+  display: block;
+  margin-top: 100px;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  color: white;
+  opacity: 0.6;
+  text-align: center;
   animation: scrollHint 1.8s ease-in-out infinite;
 }
 
@@ -167,18 +181,6 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  .ElenaBiasi {
-    position: relative; /* 👈 back to normal flow */
-    width: 100%;
-    padding: 20px;
-    top: auto;
-    transform: none;
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-  }
-}
-
 .hautdepage {
   position: relative;
   width: 100%;
@@ -258,11 +260,13 @@ body {
 }
 
 #keywords {
-  padding-top: 30px;
+  padding-top: 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .keyword-bubble {
@@ -342,10 +346,15 @@ body {
   font-size: clamp(1.8rem, 4.5vw, 3.2rem);
   color: rgb(89, 89, 207);
   font-weight: bold;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 #projectDescription {
-  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  font-size: clamp(1rem);
   color: rgb(89, 89, 207);
+  padding-left: 60px;
+  padding-right: 60px;
+  line-height: 1.3;
 }
 
 .grid-container {
@@ -422,7 +431,8 @@ body {
 /* Desktop – up to 3 columns max */
 @media (min-width: 900px) {
   .grid-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
     max-width: 1400px;
   }
 }
@@ -467,7 +477,7 @@ body {
 }
 
 .grid-item p {
-  font-size: clamp(14px, 1.2vw, 14px);
+  font-size: 10px;
   margin-left: 10px;
   transform: translate(0, -200%);
   position: absolute; /* Make sure it's positioned correctly within the grid item */
@@ -477,9 +487,9 @@ body {
     visibility 0s,
     opacity 0.3s ease; /* Smooth transition */
   backdrop-filter: blur(10px);
-  /* border-radius: 20px; */
-  padding: 10px;
-  background-color: rgb(4, 0, 255);
+  border-radius: 20px;
+  padding: 6px 8px 6px 8px;
+  background-color: rgb(89, 89, 207);
 }
 
 footer {
@@ -498,14 +508,23 @@ footer {
   /* filter: blur(5px); */
   cursor: pointer;
 }
-#imageGrid {
+/* #imageGrid {
   display: grid;
   gap: 20px;
   width: 100%;
   padding: 10px;
   margin: 0 auto;
   justify-content: center;
-  grid-template-columns: repeat(2, 1fr); /* ✅ Always 2 columns */
+  grid-template-columns: repeat(2, 1fr); 
+} */
+
+#imageGrid {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  padding: 80px;
+  margin: 0 auto;
+  grid-template-columns: 1fr; /* Une seule colonne */
 }
 
 .grid-image {
@@ -600,15 +619,12 @@ footer {
 
 #filterContainer {
   position: fixed;
-  bottom: 5px;
+  top: 5px;
   left: 50%;
-  transform: translate(-50%, -50%);
-
-  /* display: flex; */
-  /* flex-direction: column; */
-  align-items: center; /* centers buttons horizontally */
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
   justify-content: center;
-
   gap: 2px;
   z-index: 1000;
 }
@@ -618,7 +634,7 @@ footer {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: none;
-  color: rgb(89, 89, 207);
+  color: white;
   font-family: Karla;
   border-radius: 20px;
   padding: 8px 10px;
@@ -626,6 +642,14 @@ footer {
   margin-right: 10px;
   cursor: pointer;
   transition: all 0.2s ease;
+  font-size: 10px;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.filterButton {
+    font-size: 2px;
+  }
 }
 
 .filterButton:hover {

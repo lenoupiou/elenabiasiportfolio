@@ -1,43 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const grid = document.getElementById("grid");
 
-  // // Create filter buttons container
-  // const filterContainer = document.createElement("div");
-  // filterContainer.id = "filterContainer";
-  // document.body.insertBefore(filterContainer, grid); // place above grid
-
-  // // Define your filters
-  // const filters = [
-  //   "3D",
-  //   "UI/UX Design",
-  //   "VR",
-  //   "Web Design",
-  //   "Graphic Design",
-  //   "Illustration",
-  // ];
-  // const activeFilters = new Set(); // store active ones
-
-  // filters.forEach((filterName) => {
-  //   const btn = document.createElement("button");
-  //   btn.classList.add("filterButton");
-  //   btn.textContent = filterName;
-
-  //   btn.addEventListener("click", () => {
-  //     if (activeFilters.has(filterName)) {
-  //       // deactivate
-  //       activeFilters.delete(filterName);
-  //       btn.classList.remove("active");
-  //     } else {
-  //       // activate
-  //       activeFilters.add(filterName);
-  //       btn.classList.add("active");
-  //     }
-  //     applyFilters(); // update grid display
-  //   });
-
-  //   filterContainer.appendChild(btn);
-  // });
-
   // Create filter buttons container
   const filterContainer = document.createElement("div");
   filterContainer.id = "filterContainer";
@@ -168,8 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
   boxTitle.appendChild(keywords);
 
   window.addEventListener("scroll", () => {
-    const blurDiv = document.getElementById("ElenaBiasi");
-
+    const blurDiv = document.getElementById("hautdepage");
     const scrollY = window.scrollY;
     const maxScroll = window.innerHeight / 3; // fade out within first viewport height
     const scrollProgress = Math.min(scrollY / maxScroll, 1);
@@ -201,6 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
   // function applyFilters() {
   //   const items = document.querySelectorAll(".grid-item");
 
