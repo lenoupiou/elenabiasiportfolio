@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", () => {
     const blurDiv = document.getElementById("hautdepage");
     const scrollY = window.scrollY;
-    const maxScroll = window.innerHeight / 3; // fade out within first viewport height
+    const maxScroll = window.innerHeight * 2; // fade out within first viewport height
     const scrollProgress = Math.min(scrollY / maxScroll, 1);
 
     // Blur (max 10px)
