@@ -66,8 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const closePageButton = document.createElement("button");
   closePageButton.id = "closePage";
   closePageButton.textContent = "←";
-  pageContent.appendChild(closePageButton);
-
+  document.body.appendChild(closePageButton);
   const contact = document.getElementById("contact");
 
   // Create overlay div
@@ -118,17 +117,25 @@ document.addEventListener("DOMContentLoaded", function () {
   boxTitle.id = "boxTitle";
   pageContent.appendChild(boxTitle);
 
-  const projectTitle = document.createElement("h1");
+  const projectTitle = document.createElement("p");
   projectTitle.id = "projectTitle";
   boxTitle.appendChild(projectTitle);
 
-  const projectDescription = document.createElement("p");
-  projectDescription.id = "projectDescription";
-  boxTitle.appendChild(projectDescription);
+  const projectDate = document.createElement("div");
+  projectDate.id = "projectDate";
+  boxTitle.appendChild(projectDate);
+
+  const projectDatetxt = document.createElement("p");
+  projectDatetxt.id = "projectDatetxt";
+  projectDate.appendChild(projectDatetxt);
 
   const keywords = document.createElement("p");
   keywords.id = "keywords";
   boxTitle.appendChild(keywords);
+
+  const projectDescription = document.createElement("p");
+  projectDescription.id = "projectDescription";
+  boxTitle.appendChild(projectDescription);
 
   window.addEventListener("scroll", () => {
     const blurDiv = document.getElementById("hautdepage");
@@ -222,12 +229,14 @@ document.addEventListener("DOMContentLoaded", function () {
         video.addEventListener("click", function () {
           // Show the page with the selected video
           page.style.display = "block";
+          closePageButton.style.display = "flex";
 
           // Update the "page" with the clicked video's title and description
           projectVideo.src = video.src; // Set the selected video's source
           projectVideo.play(); // Ensure it starts playing
           projectTitle.textContent = data[i].title;
           projectDescription.textContent = data[i].description;
+          projectDatetxt.textContent = data[i].date;
           keywords.innerHTML = "";
 
           // Create a bubble for each keyword
@@ -243,7 +252,10 @@ document.addEventListener("DOMContentLoaded", function () {
           // ✅ Add Vimeo player only for "Magnetic Fragments" or "Before Life"
           if (
             data[i].title === "Magnetic Fragments" ||
-            data[i].title === "Before Life"
+            data[i].title === "Before Life" ||
+            data[i].title === "Cozy Fort" ||
+            data[i].title === "Fragments Incubés" ||
+            data[i].title === "Hello World"
           ) {
             // Remove old Vimeo iframe if any
             const oldVimeo = document.getElementById("vimeoPlayer");
@@ -256,16 +268,25 @@ document.addEventListener("DOMContentLoaded", function () {
             // Assign Vimeo URLs based on title
             if (data[i].title === "Magnetic Fragments") {
               vimeoIframe.src =
-                "https://player.vimeo.com/video/1118741569?h=a02ba7cca7";
+                "https://player.vimeo.com/video/1118741569?h=a02ba7cca7&autoplay=1&muted=1&title=0&byline=0&portrait=0";
             } else if (data[i].title === "Before Life") {
-              vimeoIframe.src = "https://player.vimeo.com/video/1129842544?";
+              vimeoIframe.src =
+                "https://player.vimeo.com/video/1129842544?&autoplay=1&muted=1&title=0&byline=0&portrait=0&badge=0";
+            } else if (data[i].title === "Cozy Fort") {
+              vimeoIframe.src =
+                "https://player.vimeo.com/video/1239649525?&autoplay=1&muted=1&title=0&byline=0&portrait=0&badge=0";
+            } else if (data[i].title === "Fragments Incubés") {
+              vimeoIframe.src =
+                "https://player.vimeo.com/video/1129868674?&autoplay=1&muted=1&title=0&byline=0&portrait=0&badge=0";
+            } else if (data[i].title === "Hello World") {
+              vimeoIframe.src =
+                "https://player.vimeo.com/video/1239660180?&autoplay=1&muted=1&title=0&byline=0&portrait=0&badge=0";
             }
 
             vimeoIframe.width = "100%";
-            vimeoIframe.height = "480vw";
+            vimeoIframe.height = "100%";
             vimeoIframe.frameBorder = "0";
-            vimeoIframe.allow =
-              "autoplay; fullscreen; picture-in-picture; clipboard-write";
+            vimeoIframe.allow = "autoplay; fullscreen; picture-in-picture";
             vimeoIframe.allowFullscreen = true;
 
             // ➕ Insert the Vimeo player after pageContent
@@ -311,6 +332,7 @@ document.addEventListener("DOMContentLoaded", function () {
     page.style.display = "none";
     projectVideo.pause(); // Pause the video when the page is closed
     imageGrid.style.display = "none"; // Masquer la grille d'images
+    closePageButton.style.display = "none";
   });
 
   // Create the fullscreen image overlay

@@ -1,10 +1,13 @@
 [
   {
     "title": "Before Life",
+    "date": "2022",
     "thumbnailType": "video",
     "video": "before-life.mp4",
     "thumbnail": "before-life.jpg",
-    "description": "Before Life est un court métrage de 1min30 explorant des thèmes tels que la vie, la mort et la réincarnation. La vidéo est réalisée dans le cadre du cours de 3D Graphics en 1ère année Bachelor Media & Interaction Design à l'ECAL, dirigé par Kylan Luginbühl. La séquence a été sélectionnée et diffusée dans le cadre de l'édition 2023 du DAZ Festival à Zürich.",
+"description": "Before Life est un court métrage de 1min30 explorant des thèmes tels que la vie, la mort et la réincarnation. La vidéo est réalisée dans le cadre du cours de 3D Graphics en 1ère année Bachelor Media & Interaction Design à l'ECAL, dirigé par Kylan Luginbühl. La séquence a été sélectionnée et diffusée dans le cadre de l'édition 2023 du DAZ Festival à Zürich.",
+    
+    
     "keywords": ["3D", "Animation", "Vidéo", "Cinema4D", "After Effect"],
     "vimeoId": "123456789",
     "images": [
@@ -19,20 +22,25 @@
 
   {
     "title": "Magnetic Fragments",
+    "date": "2025",
     "thumbnailType": "video",
     "video": "magnetic-fragments.mp4",
     "thumbnail": "magnetic-fragments.jpg",
     "description": "Magnetic Fragments is an interactive three-dimensional web interface that allows users to rediscover fragments of digitized analog videos, long forgotten over time. The motivation behind this project stems from a personal collection of VHS tapes recorded by my family, as well as a desire to revisit and preserve these memories in a new and dynamic way. Before the rise of digital media and social networks, everyday moments were captured on analog formats and later watched linearly as a family, shaped by the constraints of the medium. These long VHS tapes, composed of successive sequences, have gradually disappeared due to their obsolescence. The application offers a way to rediscover these forgotten memories through a three-dimensional web interface, where each sphere embodies a memory to explore and comment on.Designed for a private circle, the collaborative platform provides free navigation, revisiting fragments of memories in a contemporary way and breaking away from the monotony of traditional viewing structures. Magnetic Fragments thus becomes a space for intergenerational transmission, where memories turn into heritage and the past is shared in the present. This project was developed as part of my Bachelor’s degree in Media & Interaction Design at ECAL in 2025, and was awarded the distinction “Very Good.”",
     "keywords": ["Web Design", "Graphic Design","Web Development", "Three.js", "Javascript", "HTML", "CSS","3D", "UI/UX Design", "Creative coding", "Data visualization"],
     "images": [
-      "images/magnetic1.png",
-      "images/magnetic2.png",
+      "images/magnetic1.JPG",
+      "images/magnetic2.JPG",
       "images/magnetic3.JPG",
-      "images/magnetic4.JPG"
+      "images/magnetic4.JPG",
+      "images/magnetic5.JPG",
+      "images/magnetic6.JPG",
+      "images/magnetic7.png"
     ]
   },
     {
     "title": "Fragments Incubés",
+    "date": "2025",
     "thumbnailType": "video",
     "video": "fragments-incubes.mp4",
     "thumbnail": "fragments-incubes.jpg",
@@ -49,6 +57,7 @@
   
   {
     "title": "Toum",
+    "date": "2023",
     "thumbnailType": "video",
     "video": "toum.mp4",
     "thumbnail": "toum.jpg",
@@ -65,6 +74,7 @@
 
   {
     "title": "Takashi Murakami Triptyque",
+    "date": "2023",
     "thumbnailType": "video",
     "video": "takashi.mp4",
     "thumbnail": "takashi.jpg",
@@ -80,20 +90,21 @@
 
     {
     "title": "LET'S ACT NOW",
+    "date": "2025",
     "thumbnailType": "video",
     "video": "service-design.mp4",
     "thumbnail": "service-design.jpg",
     "description": "Un site web mobile immersif pour sensibiliser et inspirer l’action autour des Objectifs de Développement Durable (ODD). Let’s Act Now propose une série de sites web mobiles, chacun conçu comme un one-page interactif, dédié à un Objectif de Développement Durable (ODD). À travers des visuels et des vidéos percutants et des animations 3D, chaque page explore les enjeux globaux qui façonnent notre futur. Les visiteurs sont plongés dans une expérience où chaque élément visuel – des photos intrigantes aux séquences animées – est conçu pour éveiller la curiosité, provoquer des réflexions et inciter à l’engagement. Ce projet vise à rendre les ODD accessibles, impactants et engageants pour mobiliser un public large autour des défis mondiaux. Avec Let’s Act Now, l’objectif est clair : transformer la prise de conscience en action concrète.Projet en collaboration avec Quentin Kohler , Gabrielle Coué & Kristina Yenza.",
     "keywords": ["Graphic Design", "Photography", "Social Media" , "Design", "Web Design", "Campaign", "UI/UX Design"],
     "images": [
-      "images/servicedesign1.jpg",
-      "images/servicedesign2.jpg",
-      "images/servicedesign3.jpg",
-      "images/servicedesign4.jpg"
+      "images/service1.jpg",
+      "images/service2.jpg"
+
     ]
   },
   {
     "title": "Fishtank",
+    "date": "2023",
     "thumbnailType": "video",
     "video": "fishtank.mp4",
     "thumbnail": "fishtank.jpg",
@@ -101,13 +112,12 @@
     "keywords": ["3D", "Animation", "Blender", "VR", "VRsculpt"],
     "images": [
       "images/yonk1.png",
-      "images/yonk2.png",
-      "images/yonk3.png",
-      "images/yonk4.png"
+      "images/yonk2.png"
     ]
   },
   {
     "title": "Asian Animation Festival",
+    "date": "2023",
     "thumbnailType": "video",
     "video": "asian-animation-festival.mp4",
     "thumbnail": "asian-animation-festival.jpg",
@@ -124,6 +134,7 @@
   
   {
     "title": "Cozy Fort",
+    "date": "2024",
     "thumbnailType": "video",
     "video": "cozy-fort.mp4",
     "thumbnail": "cozy-fort.jpg",
@@ -138,6 +149,7 @@
   },
   {
     "title": "Who are you really?",
+    "date": "2023",
     "thumbnailType": "video",
     "video": "who-are-you-really.mp4",
     "thumbnail": "who-are-you-really.jpg",
@@ -153,6 +165,7 @@
  
   {
     "title": "Mom wants me to be a doctor",
+    "date": "2024",
     "thumbnailType": "video",
     "video": "mom.mp4",
     "thumbnail": "mom.jpg",
@@ -167,10 +180,11 @@
   },
    {
     "title": "Hurry up!",
+    "date": "2023",
     "thumbnailType": "video",
     "video": "hurry-up.mp4",
     "thumbnail": "hurry-up.jpg",
-    "description": "Un jeu vidéo réalisé en première année à l'ECAL avec le programme Unity en mêlant création d’illustration et programmation en C#.",
+    "description": "Hurry up! est un jeu vidéo réalisé dans en première année à l'Ecal avec le programme unity en mêlant création d’illustration et programmation en C#. Le but est de se préparer pour aller à l’école en emportant les objets nécessaires en un cours lapse de temps.",
     "keywords": ["Interaction", "Design", "Unity", "Illustration", "Game Design", "2D", "CSharp", "Illustration", "2D", "UI/UX Design"],
     "images": [
 
@@ -185,6 +199,7 @@
   },
   {
     "title": "Sound Toy",
+    "date": "2023",
     "thumbnailType": "video",
     "video": "sound-toy.mp4",
     "thumbnail": "sound-toy.jpg",
@@ -199,6 +214,7 @@
   },
   {
     "title": "Hello World",
+    "date": "2024",
     "thumbnailType": "video",
     "video": "hello-world.mp4",
     "thumbnail": "hello-world.jpg",
@@ -213,6 +229,7 @@
   },
   {
     "title": "StreamForBots",
+    "date": "2025",
     "thumbnailType": "video",
     "video": "streamforbots.mp4",
     "thumbnail": "streamforbots.jpg",
@@ -228,6 +245,7 @@
 
   {
     "title": "It rains cats and dogs",
+    "date": "2024",
     "thumbnailType": "video",
     "video": "it-rains-cats-and-dogs.mp4",
     "thumbnail": "it-rains-cats-and-dogs.jpg",
@@ -237,9 +255,10 @@
   },
   {
     "title": "CHLORYS GENEVE",
+    "date": "2016-2018",
     "thumbnailType": "image",
     "video": "chlorys.mp4",
-    "thumbnail": "chlorys.jpg",
+    "thumbnail": "images/chlorys1.jpeg",
     "description": "J’ai eu l’opportunité de m’occuper de toute la communication visuelle de CHLORYS lorsque j'étais graphiste au sein de l'entreprise : Publicités, Visuels de réseaux sociaux, Documents interne, Brochures clients, Packaging de produits et coffrets, PLV, Set administratif, Campagnes visuelles etc.",
     "keywords": ["Graphic Design", "Marketing", "Social Media" , "Design", "Branding", "Print", "Packaging"],
     "images": [
@@ -247,46 +266,8 @@
       "images/chlorys2.png",
       "images/chlorys3.png",
       "images/chlorys4.jpeg",
-      "images/chlorys5.jpeg",
-      "images/chlorys6.jpeg"
-
+      "images/chlorys5.jpg"
     ]
-  },
-  {
-    "title": "Affiches",
-    "thumbnailType": "image",
-    "video": "affiche.mp4",
-    "thumbnail": "affiche1.png",
-    "description": "Multiples affiches réalisées au cours de ma formation de graphiste.",
-    "keywords": ["Graphic Design", "Design", "Print, typography", "Poster"],
-    "images": [
-      "images/affiche1.png",
-      "images/affiche2.png",
-      "images/affiche3.png",
-      "images/affiche4.jpeg"
-    ]
-  },
-  {
-    "title": "Illustrations",
-    "thumbnailType": "image",
-    "video": "art.mp4",
-    "thumbnail": "art1.jpg",
-    "description": "Multiples affiches réalisées au cours de ma formation de graphiste.",
-    "keywords": ["Illustration", "Drawing", "Digital Art", "Character Design"],
-    "images": [
-      "images/art1.jpg",
-      "images/art2.jpg",
-      "images/art3.jpg",
-      "images/art4.jpg",
-      "images/art5.jpg",
-      "images/art6.jpg",
-      "images/art7.jpg",
-      "images/art8.jpg",
-      "images/art9.jpg",
-      "images/art10.jpg",
-      "images/art11.jpg",
-      "images/art12.jpg"
-    ]
-  }
+  } 
   
 ]
