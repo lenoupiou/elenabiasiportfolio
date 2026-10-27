@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Define your filters
   const filters = [
+    "Graphic Design",
+    "Web Design",
     "3D",
     "UI/UX Design",
     "VR",
-    "Web Design",
-    "Graphic Design",
     "Illustration",
   ];
 

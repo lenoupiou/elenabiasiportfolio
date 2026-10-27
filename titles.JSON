@@ -88,7 +88,9 @@
       "images/toum1.png",
       "images/toum2.png",
       "images/toum3.png",
-      "images/toum4.png"
+      "images/toum4.png",
+      "images/toum5.jpg"
+
     ]
   },
 
@@ -299,7 +301,7 @@
     "date": "2017 - 2026",
     "thumbnailType": "image",
     "thumbnail": "artdigital1.jpg",
-    "description": "Une animation motion design réalisée avec After Effect dans le cadre de la semaine After Effect de deuxième année à l'ECAL.",
+    "description": "Après avoir fini ma formation de graphiste en option illustration/narration au CFP ARTS, j’ai continué de me passionner pour l’illustration et à la création de bande dessinée. Je m'inspire principalement de la pop-culture, de la mode et du style artistique manga. J’ai commencé ma première bande dessiné manga «Bélial» en 2018 et c’est une œuvre que j’ai auto édité et commercialisé lors de conventions spécialisés dans le domaine tel que JAPAN EXPO (paris) et POLYMANGA (montreux) et JAPAN IMPACT (Lausanne) entre 2018 et 2022.",
     "keywords": ["Motion Design", "Animation", "After Effect", "Illustration", "2D"],
      "images": [
       "images/artdigital1.jpg",
