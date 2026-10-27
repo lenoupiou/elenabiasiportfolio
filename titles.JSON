@@ -29,31 +29,51 @@
     "description": "Magnetic Fragments is an interactive three-dimensional web interface that allows users to rediscover fragments of digitized analog videos, long forgotten over time. The motivation behind this project stems from a personal collection of VHS tapes recorded by my family, as well as a desire to revisit and preserve these memories in a new and dynamic way. Before the rise of digital media and social networks, everyday moments were captured on analog formats and later watched linearly as a family, shaped by the constraints of the medium. These long VHS tapes, composed of successive sequences, have gradually disappeared due to their obsolescence. The application offers a way to rediscover these forgotten memories through a three-dimensional web interface, where each sphere embodies a memory to explore and comment on.Designed for a private circle, the collaborative platform provides free navigation, revisiting fragments of memories in a contemporary way and breaking away from the monotony of traditional viewing structures. Magnetic Fragments thus becomes a space for intergenerational transmission, where memories turn into heritage and the past is shared in the present. This project was developed as part of my Bachelor’s degree in Media & Interaction Design at ECAL in 2025, and was awarded the distinction “Very Good.”",
     "keywords": ["Web Design", "Graphic Design","Web Development", "Three.js", "Javascript", "HTML", "CSS","3D", "UI/UX Design", "Creative coding", "Data visualization"],
     "images": [
-      "images/magnetic1.JPG",
-      "images/magnetic2.JPG",
-      "images/magnetic3.JPG",
-      "images/magnetic4.JPG",
-      "images/magnetic5.JPG",
-      "images/magnetic6.JPG",
-      "images/magnetic7.png"
-    ]
-  },
-    {
-    "title": "Fragments Incubés",
-    "date": "2025",
-    "thumbnailType": "video",
-    "video": "fragments-incubes.mp4",
-    "thumbnail": "fragments-incubes.jpg",
+      "images/magnetic1.png",
+      "images/magnetic2.png",
+      "images/magnetic3.png",
+      "images/magnetic4.png",
+      "images/magnetic5.png",
+      "images/magnetic6.png",
+      "images/magnetic7.jpg",
+      "images/magnetic8.jpg"
 
-    "description": "Projet en réalité augmentée sur le thème de l'amnésie infantile et de l'utilisation de mes vidéos d'enfance. Le principe de l'expérience est d'explorer à la première personne mes souvenirs d'enfance, de la gestation dans le ventre de ma mère, à l'accouchement et finalement à la petite enfance. Les bandes audio sont toutes extraites à partir de mes archives VHS familiales.",
-    "keywords": ["3D", "Animation", "Blender", "VR", "Gaussian Splatting"],
-    "images": [
-      "images/incube1.png",
-      "images/incube2.png",
-      "images/incube3.png",
-      "images/incube4.png"
     ]
   },
+
+  {
+    "title": "CHLORYS GENEVE",
+    "date": "2016 - 2018",
+    "thumbnailType": "image",
+    "thumbnail": "chlorys1.jpeg",
+    "description": "J’ai eu l’opportunité de m’occuper de toute la communication visuelle de CHLORYS lorsque j'étais graphiste au sein de l'entreprise : Publicités, Visuels de réseaux sociaux, Documents interne, Brochures clients, Packaging de produits et coffrets, PLV, Set administratif, Campagnes visuelles etc.",
+    "keywords": ["Graphic Design", "Marketing", "Social Media" , "Design", "Branding", "Print", "Packaging"],
+    "images": [
+      "images/chlorys1.jpeg",
+      "images/chlorys2.png",
+      "images/chlorys3.png",
+      "images/chlorys4.jpg",
+      "images/chlorys5.jpg"
+    ]
+  } , 
+  {
+    "title": "GP CLIMAT",
+    "date": "2022 - 2026",
+    "thumbnailType": "image",
+    "thumbnail": "gpclimat1.png",
+    "description": "Je collabore depuis 2022 en tant que designer avec GP-CLIMAT, une association qui s'investit dans la lutte pour la préservation de la biodiversité. J'ai réalisés de nombreux projets avec notamment la création d'affiches pour des événements, des illustrations, la réalisation et la mise en page de deux version du guide numérique, la création de newsletters ainsi que la mise à jour du site internet via Wordpress.",
+        "keywords": ["Graphic Design", "Poster", "Booklet", "Illustration","Web Design", "Wordpress"],
+    "images": [      
+      "images/gpclimat1.png",
+      "images/gpclimat2.png",
+    "images/gpclimat3.png",
+    "images/gpclimat4.png",
+    "images/gpclimat5.png",
+    "images/gpclimat6.png",
+    "images/gpclimat7.png"
+    ]
+  } ,
+    
   
   {
     "title": "Toum",
@@ -91,14 +111,16 @@
     {
     "title": "LET'S ACT NOW",
     "date": "2025",
-    "thumbnailType": "video",
+    "thumbnailType": "image",
     "video": "service-design.mp4",
     "thumbnail": "service-design.jpg",
     "description": "Un site web mobile immersif pour sensibiliser et inspirer l’action autour des Objectifs de Développement Durable (ODD). Let’s Act Now propose une série de sites web mobiles, chacun conçu comme un one-page interactif, dédié à un Objectif de Développement Durable (ODD). À travers des visuels et des vidéos percutants et des animations 3D, chaque page explore les enjeux globaux qui façonnent notre futur. Les visiteurs sont plongés dans une expérience où chaque élément visuel – des photos intrigantes aux séquences animées – est conçu pour éveiller la curiosité, provoquer des réflexions et inciter à l’engagement. Ce projet vise à rendre les ODD accessibles, impactants et engageants pour mobiliser un public large autour des défis mondiaux. Avec Let’s Act Now, l’objectif est clair : transformer la prise de conscience en action concrète.Projet en collaboration avec Quentin Kohler , Gabrielle Coué & Kristina Yenza.",
     "keywords": ["Graphic Design", "Photography", "Social Media" , "Design", "Web Design", "Campaign", "UI/UX Design"],
     "images": [
       "images/service1.jpg",
-      "images/service2.jpg"
+      "images/service2.jpg",
+      "images/service3.jpg"
+
 
     ]
   },
@@ -118,7 +140,7 @@
   {
     "title": "Asian Animation Festival",
     "date": "2023",
-    "thumbnailType": "video",
+    "thumbnailType": "image",
     "video": "asian-animation-festival.mp4",
     "thumbnail": "asian-animation-festival.jpg",
     "videoAdditional": "asian-animation-festival.mp4",
@@ -128,7 +150,27 @@
       "images/dynamic1.jpg",
       "images/dynamic2.jpg",
       "images/dynamic3.png",
-      "images/dynamic4.jpg"
+      "images/dynamic4.jpg",
+      "images/dynamic5.jpg",
+      "images/dynamic6.jpg",
+      "images/dynamic7.jpg",
+      "images/dynamic8.png"
+    ]
+  },
+  {
+    "title": "Fragments Incubés",
+    "date": "2025",
+    "thumbnailType": "video",
+    "video": "fragments-incubes.mp4",
+    "thumbnail": "fragments-incubes.jpg",
+
+    "description": "Projet en réalité augmentée sur le thème de l'amnésie infantile et de l'utilisation de mes vidéos d'enfance. Le principe de l'expérience est d'explorer à la première personne mes souvenirs d'enfance, de la gestation dans le ventre de ma mère, à l'accouchement et finalement à la petite enfance. Les bandes audio sont toutes extraites à partir de mes archives VHS familiales.",
+    "keywords": ["3D", "Animation", "Blender", "VR", "Gaussian Splatting"],
+    "images": [
+      "images/incube1.png",
+      "images/incube2.png",
+      "images/incube3.png",
+      "images/incube4.png"
     ]
   },
   
@@ -230,9 +272,8 @@
   {
     "title": "StreamForBots",
     "date": "2025",
-    "thumbnailType": "video",
-    "video": "streamforbots.mp4",
-    "thumbnail": "streamforbots.jpg",
+    "thumbnailType": "image",
+    "thumbnail": "streamforbots.png",
     "description": "Projet de site web interactif réalisé en 3ème année à l'ECAL. Mon concept était de réaliser une plateforme de streaming pour robots interdit aux humains.",
     "keywords": ["Web Design", "Web Development", "Interaction", "Javascript", "HTML", "CSS", "LLM Ollama", "IA", "3D", "Blender", "Three.js", "Graphic Design", "UI/UX Design"],
     "images": [
@@ -253,21 +294,24 @@
     "keywords": ["Motion Design", "Animation", "After Effect", "Illustration", "2D"]
    
   },
-  {
-    "title": "CHLORYS GENEVE",
-    "date": "2016-2018",
+   {
+    "title": "Digital Art",
+    "date": "2017 - 2026",
     "thumbnailType": "image",
-    "video": "chlorys.mp4",
-    "thumbnail": "images/chlorys1.jpeg",
-    "description": "J’ai eu l’opportunité de m’occuper de toute la communication visuelle de CHLORYS lorsque j'étais graphiste au sein de l'entreprise : Publicités, Visuels de réseaux sociaux, Documents interne, Brochures clients, Packaging de produits et coffrets, PLV, Set administratif, Campagnes visuelles etc.",
-    "keywords": ["Graphic Design", "Marketing", "Social Media" , "Design", "Branding", "Print", "Packaging"],
-    "images": [
-      "images/chlorys1.jpeg",
-      "images/chlorys2.png",
-      "images/chlorys3.png",
-      "images/chlorys4.jpeg",
-      "images/chlorys5.jpg"
+    "thumbnail": "artdigital1.jpg",
+    "description": "Une animation motion design réalisée avec After Effect dans le cadre de la semaine After Effect de deuxième année à l'ECAL.",
+    "keywords": ["Motion Design", "Animation", "After Effect", "Illustration", "2D"],
+     "images": [
+      "images/artdigital1.jpg",
+    "images/artdigital2.jpg",
+    "images/artdigital3.png",
+    "images/artdigital4.jpg",
+    "images/artdigital5.jpg",
+    "images/artdigital6.jpg",
+    "images/artdigital7.jpg"
     ]
-  } 
+  }
+  
   
 ]
+ 

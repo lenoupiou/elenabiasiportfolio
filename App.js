@@ -113,6 +113,11 @@ document.addEventListener("DOMContentLoaded", function () {
   projectVideo.playsInline = true; // Ensure it plays inline on mobile
   pageContent.appendChild(projectVideo);
 
+  const projectCover = document.createElement("img");
+  projectCover.id = "projectCover";
+  projectCover.style.display = "none";
+  pageContent.appendChild(projectCover);
+
   const boxTitle = document.createElement("div");
   boxTitle.id = "boxTitle";
   pageContent.appendChild(boxTitle);
@@ -129,13 +134,12 @@ document.addEventListener("DOMContentLoaded", function () {
   projectDatetxt.id = "projectDatetxt";
   projectDate.appendChild(projectDatetxt);
 
-  const keywords = document.createElement("p");
-  keywords.id = "keywords";
-  boxTitle.appendChild(keywords);
-
   const projectDescription = document.createElement("p");
   projectDescription.id = "projectDescription";
   boxTitle.appendChild(projectDescription);
+  const keywords = document.createElement("p");
+  keywords.id = "keywords";
+  boxTitle.appendChild(keywords);
 
   window.addEventListener("scroll", () => {
     const blurDiv = document.getElementById("hautdepage");
@@ -200,40 +204,79 @@ document.addEventListener("DOMContentLoaded", function () {
 
         div.dataset.keywords = data[i].keywords.join(",");
 
-        // Create video element for the grid
-        const video = document.createElement("video");
-        video.src = `imgTitre/${data[i].video}`;
-        video.poster = `imgTitre/${data[i].thumbnail}`; // 👈 thumbnail
-        video.loop = true;
-        video.muted = true;
-        video.playsInline = true;
-        video.preload = "none"; // 👈 prevents heavy loading
-        // Start videos paused
-        video.pause();
+        // // Create video element for the grid
+        // const video = document.createElement("video");
+        // video.src = `imgTitre/${data[i].video}`;
+        // video.poster = `imgTitre/${data[i].thumbnail}`; // 👈 thumbnail
+        // video.loop = true;
+        // video.muted = true;
+        // video.playsInline = true;
+        // video.preload = "none"; // 👈 prevents heavy loading
+        // // Start videos paused
+        // video.pause();
+
+        const hasVideo = data[i].thumbnailType
+          ? data[i].thumbnailType === "video"
+          : !!data[i].video;
+        let media;
+
+        if (hasVideo) {
+          media = document.createElement("video");
+          media.src = `imgTitre/${data[i].video}`;
+          media.poster = `imgTitre/${data[i].thumbnail}`;
+          media.loop = true;
+          media.muted = true;
+          media.playsInline = true;
+          media.preload = "none";
+
+          media.addEventListener("mouseenter", () => {
+            media.play().catch(() => {});
+          });
+          media.addEventListener("mouseleave", () => media.pause());
+        } else {
+          media = document.createElement("img");
+          media.src = `imgTitre/${data[i].thumbnail}`;
+          media.alt = data[i].title;
+          media.loading = "lazy";
+        }
 
         // Play video on hover
-        video.addEventListener("mouseenter", () => {
-          video.play();
-        });
+        // video.addEventListener("mouseenter", () => {
+        //   video.play();
+        // });
 
-        // Pause video when hover ends
-        video.addEventListener("mouseleave", () => {
-          video.pause();
-        });
+        // // Pause video when hover ends
+        // video.addEventListener("mouseleave", () => {
+        //   video.pause();
+        // });
 
         // Add title text
         const text = document.createElement("p");
         text.textContent = data[i] ? data[i].title : `Video ${i + 1}`;
 
         // Add click event to each video
-        video.addEventListener("click", function () {
+        media.addEventListener("click", function () {
           // Show the page with the selected video
           page.style.display = "block";
           closePageButton.style.display = "flex";
 
+          document.body.style.overflow = "hidden"; // lock the home page scroll
+          page.scrollTop = 0; // project page starts at the top
+
           // Update the "page" with the clicked video's title and description
-          projectVideo.src = video.src; // Set the selected video's source
-          projectVideo.play(); // Ensure it starts playing
+          if (hasVideo) {
+            projectCover.style.display = "none";
+            projectVideo.style.display = "block";
+            projectVideo.src = `imgTitre/${data[i].video}`;
+            projectVideo.play().catch(() => {});
+          } else {
+            projectVideo.pause();
+            projectVideo.removeAttribute("src");
+            projectVideo.load();
+            projectVideo.style.display = "none";
+            projectCover.src = `imgTitre/${data[i].thumbnail}`;
+            projectCover.style.display = "block";
+          }
           projectTitle.textContent = data[i].title;
           projectDescription.textContent = data[i].description;
           projectDatetxt.textContent = data[i].date;
@@ -255,7 +298,8 @@ document.addEventListener("DOMContentLoaded", function () {
             data[i].title === "Before Life" ||
             data[i].title === "Cozy Fort" ||
             data[i].title === "Fragments Incubés" ||
-            data[i].title === "Hello World"
+            data[i].title === "Hello World" ||
+            data[i].title === "Mom wants me to be a doctor"
           ) {
             // Remove old Vimeo iframe if any
             const oldVimeo = document.getElementById("vimeoPlayer");
@@ -281,13 +325,14 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (data[i].title === "Hello World") {
               vimeoIframe.src =
                 "https://player.vimeo.com/video/1239660180?&autoplay=1&muted=1&title=0&byline=0&portrait=0&badge=0";
+            } else if (data[i].title === "Mom wants me to be a doctor") {
+              vimeoIframe.src =
+                "https://player.vimeo.com/video/1239807189?&autoplay=1&muted=1&title=0&byline=0&portrait=0&badge=0";
             }
 
-            vimeoIframe.width = "100%";
+            vimeoIframe.width = "70%";
             vimeoIframe.height = "100%";
-            vimeoIframe.frameBorder = "0";
             vimeoIframe.allow = "autoplay; fullscreen; picture-in-picture";
-            vimeoIframe.allowFullscreen = true;
 
             // ➕ Insert the Vimeo player after pageContent
             pageContent.insertAdjacentElement("afterend", vimeoIframe);
@@ -318,7 +363,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         // Append video and title to the grid item
-        div.appendChild(video);
+        div.appendChild(media);
         div.appendChild(text);
         grid.appendChild(div);
       }
@@ -330,8 +375,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Close the "page" when clicking the close button
   closePageButton.addEventListener("click", function () {
     page.style.display = "none";
-    projectVideo.pause(); // Pause the video when the page is closed
-    imageGrid.style.display = "none"; // Masquer la grille d'images
+    document.body.style.overflow = ""; // unlock the home page scroll
+    projectVideo.pause();
+    document.getElementById("vimeoPlayer")?.remove();
+    imageGrid.style.display = "none";
     closePageButton.style.display = "none";
   });
 
