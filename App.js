@@ -251,8 +251,24 @@ document.addEventListener("DOMContentLoaded", function () {
         // });
 
         // Add title text
+        // const text = document.createElement("p");
+        // text.textContent = data[i] ? data[i].title : `Video ${i + 1}`;
+
+        // Add title text
         const text = document.createElement("p");
+        text.classList.add("grid-item-title");
         text.textContent = data[i] ? data[i].title : `Video ${i + 1}`;
+
+        // Add date text
+        const date = document.createElement("p");
+        date.classList.add("grid-item-date");
+        date.textContent = data[i].date || "";
+
+        // Create text container
+        const textContainer = document.createElement("div");
+        textContainer.classList.add("grid-item-text");
+        textContainer.appendChild(text);
+        textContainer.appendChild(date);
 
         // Add click event to each video
         media.addEventListener("click", function () {
@@ -364,7 +380,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Append video and title to the grid item
         div.appendChild(media);
-        div.appendChild(text);
+        div.appendChild(textContainer);
         grid.appendChild(div);
       }
     })
